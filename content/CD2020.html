@@ -108,6 +108,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -153,4 +154,119 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='CD2020.html'>CD2020</a><ul><li><a href='SSH.html'>SSH</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH<br /><h1>CD2020</h1>
+<h4>Create Portable Programming System for Windows 10</h4>
+<p>在可攜系統目錄下先創一個 data 目錄</p>
+<p><span>PortableGit：<br/><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 下載 64-bit Git for Windows Portable 安裝在 data 目錄下</span></p>
+<p><span>MSYS2：<br/><a href="https://www.msys2.org/">https://www.msys2.org/</a> 下載 msys2-x86_64-20190524.exe 並安裝在 data/msys64 的目錄下<br/><a href="https://www.scintilla.org/SciTEDownload.html">https://www.scintilla.org/SciTEDownload.html</a> 下載 full 64-bit download，解壓縮檔案至 data/wscite432，就是可以直</span></p>
+<p><span>python3.8.1：<br/></span><a class="link" href="https://www.python.org/downloads/windows/" rel="nofollow noopener noreferrer" target="_blank">https://www.python.org/downloads/windows/</a><span><span> </span>下載 Download Windows x86-64 executable installer 準備安裝 3.8.2 python 解譯器，安裝完成後將完整資料放在 data/py381目錄底下</span></p>
+<p><span>SciTE：接執行的 Scite.exe 編輯器，若希望以 UtF-8 編碼開啟文件，就必須啟用 Options 下拉式功能表中的 Global Options File（同 SciTEGlobal.properties 檔案）其中的預設值 code.page=0 （為Windows 內定的 Big-5 編碼）修改設定為 code.page=65001，表示使用使UTF-8 編碼</span></p>
+<p><span>Tiny C Compiler：<br/></span><span><a href="https://github.com/TinyCC/tinycc">https://github.com/TinyCC/tinycc</a> git clone 整個倉儲到 data 目錄下並命名目錄為 tcc</span></p>
+<p><span>Jupyterlab：<br/><a href="https://github.com/jupyterlab/jupyterlab">https://github.com/jupyterlab/jupyterlab</a> pip install jupyterlab==2.0.1 自動執行安裝</span></p>
+<p><span>Fossil SCM：<a href="https://www.fossil-scm.org/">https://www.fossil-scm.org/</a></span></p>
+<p><span>Flutter：<a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter</a></span></p>
+<p><span>Visual Studio Code：<a href="https://github.com/microsoft/vscode">https://github.com/microsoft/vscode</a> (目前是先安裝，安裝完成後把資料放 data/vscode 目錄下)</span></p>
+<p>home/home_mdecourse：存放 ssh 的資料</p>
+<p>tmp：放 clone 下來的倉儲</p>
+<p>ShareX：<a href="https://getsharex.com/downloads/">https://getsharex.com/downloads/</a></p>
+<p>putty：<a href="http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html">http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html</a> 或 <a href="https://github.com/s40723150/cd2020/tree/master/downloads/putty.7z">https://github.com/s40723150/cd2020/tree/master/downloads/putty.7z</a></p>
+<p>start.bat</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+subst %Disk%: "data"
+
+%Disk%:
+
+set HomePath=%Disk%:\home
+set HomeDrive=%Disk%:\home
+set Home=%Disk%:\home
+set USERPROFILE=%Disk%:\home
+
+REM 將系統 Python 程式的 io 設為 utf-8
+set PYTHONIOENCODING="utf-8"
+
+set PYTHONPATH=%Disk%:\py381\DLLs;%Disk%:\py381\Lib;%Disk%:\py381\Lib\site-packages;
+set PYTHONHOME=%Disk%:\py381
+
+#REM for putty
+#Set GIT_HOME=%CDisk%:\portablegit\bin\
+#Set GIT_SSH=%Disk%:\putty\plink.exe
+
+set path_python=%Disk%:\py381;%Disk%:\py381\Scripts;
+set path_msys2=%Disk%:\msys64\mingw64\bin;
+set path_git=%Disk%:\portablegit\bin;
+set path_cmake=%Disk%:\cmake-3.10.1-win64-x64\bin;
+set path_vscode=%Disk%:\vscode;
+set path_tcc=%Disk%:\tcc;
+
+
+path=%Disk%:;%path_python%;%path_msys2%;%path_git%;%path_cmake%;%path_tcc%;
+
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+
+start /MIN %Disk%:\wscite432\wscite\SciTE.exe
+start /MIN %Disk%:\wscite432\wscite\SciTE.exe
+
+Exit</pre>
+<p>stop.bat</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+path=%PATH%;
+
+taskkill /IM python.exe /F
+taskkill /IM pythonw.exe /F
+taskkill /IM scite.exe /F
+taskkill /IM ShareX.exe /F
+
+REM 終止虛擬硬碟與目錄的對應
+subst %Disk%: /D
+REM 關閉 cmd 指令視窗
+taskkill /IM cmd.exe /F
+
+EXIT</pre>
+<p><br/><br/></p><br />Develop << <a href='Develop.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
