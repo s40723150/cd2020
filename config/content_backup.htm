@@ -22,13 +22,13 @@
 <p><span>SciTE：接執行的 Scite.exe 編輯器，若希望以 UtF-8 編碼開啟文件，就必須啟用 Options 下拉式功能表中的 Global Options File（同 SciTEGlobal.properties 檔案）其中的預設值 code.page=0 （為Windows 內定的 Big-5 編碼）修改設定為 code.page=65001，表示使用使UTF-8 編碼</span></p>
 <p><span>Tiny C Compiler：<br/></span><span><a href="https://github.com/TinyCC/tinycc">https://github.com/TinyCC/tinycc</a> git clone 整個倉儲到 data 目錄下並命名目錄為 tcc</span></p>
 <p><span>Jupyterlab：<br/><a href="https://github.com/jupyterlab/jupyterlab">https://github.com/jupyterlab/jupyterlab</a> pip install jupyterlab==2.0.1 自動執行安裝</span></p>
-<p><span>Fossil SCM：<a href="https://www.fossil-scm.org/">https://www.fossil-scm.org/</a></span></p>
-<p><span>Flutter：<a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter</a></span></p>
+<p><span>Fossil SCM：<a href="https://www.fossil-scm.org/">https://www.fossil-scm.org/</a> 下載 fossil scm 解壓縮後將 fossil.exe 放到 data 目錄下</span></p>
+<p><span>Flutter：<a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter <br/></a><br/></span></p>
 <p><span>Visual Studio Code：<a href="https://github.com/microsoft/vscode">https://github.com/microsoft/vscode</a> (目前是先安裝，安裝完成後把資料放 data/vscode 目錄下)</span></p>
 <p>home/home_mdecourse：存放 ssh 的資料</p>
 <p>tmp：放 clone 下來的倉儲</p>
 <p>ShareX：<a href="https://getsharex.com/downloads/">https://getsharex.com/downloads/</a></p>
-<p>putty：<a href="http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html">http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html</a> 或 <a href="https://github.com/s40723150/cd2020/tree/master/downloads/putty.7z">https://github.com/s40723150/cd2020/tree/master/downloads/putty.7z</a></p>
+<p>putty：<a href="http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html">老師整理的 putty</a> 或 <a href="https://github.com/s40723150/cd2020/raw/master/downloads/putty.7z">個人整理的 putty.7z</a></p>
 <p>start.bat</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
 set Disk=y
@@ -86,7 +86,11 @@ REM 關閉 cmd 指令視窗
 taskkill /IM cmd.exe /F
 
 EXIT</pre>
-<p><br/><br/></p><h2>SSH</h2>
+<p><br/><br/></p><h2>pip</h2>
+<h4>安裝 CMSiMDE 所需模組：</h4>
+<p><span>利用 pip 安裝 flask, bs4, lxml, pelican, markdown, flask_cors, leo (可單獨安裝區少的模組)</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install flask bs4 lxml pelican markdown flask_cors leo</pre>
+<p></p><h2>SSH</h2>
 <h4>批次檔設定</h4>
 <p>執行隨身碟 SciTE.exe ( 位於 201906_fall\data\wscite415\wscite 目錄下 )</p>
 <p><span lang="zh-TW">開啟</span><span lang="zh-TW"><span face="Calibri"> start_mdecourse.bat 並加入</span></span></p>
