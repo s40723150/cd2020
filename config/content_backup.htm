@@ -19,11 +19,11 @@
 <p><span>PortableGit：<br/><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 下載 64-bit Git for Windows Portable 安裝在 data 目錄下</span></p>
 <p><span>MSYS2：<br/><a href="https://www.msys2.org/">https://www.msys2.org/</a> 下載 msys2-x86_64-20190524.exe 並安裝在 data/msys64 的目錄下<br/><a href="https://www.scintilla.org/SciTEDownload.html">https://www.scintilla.org/SciTEDownload.html</a> 下載 full 64-bit download，解壓縮檔案至 data/wscite432，就是可以直</span></p>
 <p><span>python3.8.1：<br/></span><a class="link" href="https://www.python.org/downloads/windows/" rel="nofollow noopener noreferrer" target="_blank">https://www.python.org/downloads/windows/</a><span><span> </span>下載 Download Windows x86-64 executable installer 準備安裝 3.8.2 python 解譯器，安裝完成後將完整資料放在 data/py381目錄底下</span></p>
-<p><span>SciTE：接執行的 Scite.exe 編輯器，若希望以 UtF-8 編碼開啟文件，就必須啟用 Options 下拉式功能表中的 Global Options File（同 SciTEGlobal.properties 檔案）其中的預設值 code.page=0 （為Windows 內定的 Big-5 編碼）修改設定為 code.page=65001，表示使用使UTF-8 編碼</span></p>
+<p><span>SciTE：接執行的 Scite.exe 編輯器，若希望以 UtF-8 編碼開啟文件，就必須啟用 Options 下拉式功能表中的 Global Options File（同 SciTEGlobal.properties 檔案）其中的預設值 code.page=0 （為Windows 內定的 Big-5 編碼）修改設定為 code.page=65001，表示使用使 UTF-8 編碼，若要開啟即時更新內容，將load.on.activate=1 前面的井字號拿掉，就會即時更新了（SciTE 須重啟）<br/><img alt="" height="604" src="/images/set_scite.gif" width="500"/><br/>修改成 UTF-8 編碼</span></p>
 <p><span>Tiny C Compiler：<br/></span><span><a href="https://github.com/TinyCC/tinycc">https://github.com/TinyCC/tinycc</a> git clone 整個倉儲到 data 目錄下並命名目錄為 tcc</span></p>
 <p><span>Jupyterlab：<br/><a href="https://github.com/jupyterlab/jupyterlab">https://github.com/jupyterlab/jupyterlab</a> pip install jupyterlab==2.0.1 自動執行安裝</span></p>
 <p><span>Fossil SCM：<a href="https://www.fossil-scm.org/">https://www.fossil-scm.org/</a> 下載 fossil scm 解壓縮後將 fossil.exe 放到 data 目錄下</span></p>
-<p><span>Flutter：<a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter <br/></a><br/></span></p>
+<p><span>Flutter：<a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter </a> (在 data 目錄底下 git clone https://github.com/flutter/flutter.git -b stable)<br/></span></p>
 <p><span>Visual Studio Code：<a href="https://github.com/microsoft/vscode">https://github.com/microsoft/vscode</a> (目前是先安裝，安裝完成後把資料放 data/vscode 目錄下)</span></p>
 <p>home/home_mdecourse：存放 ssh 的資料</p>
 <p>tmp：放 clone 下來的倉儲</p>
@@ -90,7 +90,8 @@ EXIT</pre>
 <h4>安裝 CMSiMDE 所需模組：</h4>
 <p><span>利用 pip 安裝 flask, bs4, lxml, pelican, markdown, flask_cors, leo (可單獨安裝區少的模組)</span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install flask bs4 lxml pelican markdown flask_cors leo</pre>
-<p></p><h2>SSH</h2>
+<p></p>
+<h2>SSH</h2>
 <h4>批次檔設定</h4>
 <p>執行隨身碟 SciTE.exe ( 位於 201906_fall\data\wscite415\wscite 目錄下 )</p>
 <p><span lang="zh-TW">開啟</span><span lang="zh-TW"><span face="Calibri"> start_mdecourse.bat 並加入</span></span></p>
@@ -123,3 +124,15 @@ EXIT</pre>
 <p><span lang="en-US">*p.s.  需指定 ppk 檔</span></p>
 <p><span lang="en-US">儲存 session 設定</span></p>
 <p><span lang="en-US"><img alt="" height="400" src="https://s40723150.github.io/cad2019/images/putty_save.png" width="401"/></span></p>
+<h2>Q&amp;A</h2>
+<p>Q：缺少 lxml 模組<br/><img alt="" height="229" src="/images/Q_lmxl.png" width="500"/></p>
+<p>A：安裝 lxml 模組</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install lxml</pre>
+<p><img alt="" height="76" src="/images/A_lxml.png" width="500"/></p>
+<p>Q：缺少 flask 模組<br/><img alt="" height="107" src="/images/Q_flask.png" width="500"/></p>
+<p>A：安裝 flask 模組</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install flask</pre>
+<p>Q：缺少 flask_cors 模組<br/><img alt="" height="121" src="/images/Q_flask-cors.png" width="500"/></p>
+<p>A：安裝<span> flask_cors 模組</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install  flask_cors</pre>
+<p><img alt="" height="156" src="/images/A_flask-cors.png" width="500"/></p>
