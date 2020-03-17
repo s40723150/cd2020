@@ -31,6 +31,12 @@
 <v t="leo.20180902120523.16"><vh>P2</vh>
 <v t="leo.20180902120523.17"><vh>python 3.8.2 p2</vh></v>
 </v>
+<v t="leo.20200317195730.4"><vh>pip</vh>
+<v t="leo.20200317195730.5"><vh>pip</vh></v>
+</v>
+<v t="leo.20200317195730.6"><vh>pip模組安裝</vh>
+<v t="leo.20200317195730.7"><vh>pip module</vh></v>
+</v>
 </v>
 <v t="leo.20200317193302.1"><vh>SciTE</vh>
 <v t="leo.20200317193302.2"><vh>P1</vh>
@@ -49,12 +55,6 @@
 <v t="leo.20200317195730.1"><vh>PortableGit</vh>
 <v t="leo.20200317195730.2"><vh>P1</vh>
 <v t="leo.20200317195730.3"><vh>PortableGit p1</vh></v>
-</v>
-<v t="leo.20200317195730.4"><vh>P2</vh>
-<v t="leo.20200317195730.5"><vh>SciTE p2</vh></v>
-</v>
-<v t="leo.20200317195730.6"><vh>P3</vh>
-<v t="leo.20200317195730.7"><vh>SciTE p3</vh></v>
 </v>
 </v>
 <v t="leo.20200317211132.1"><vh>Tiny C Compiler</vh>
