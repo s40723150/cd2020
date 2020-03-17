@@ -22,7 +22,7 @@
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20180902120523.11"><vh>可攜系統</vh>
-<v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20180902120523.12"><vh>可攜系統配置</vh></v>
 </v>
 <v t="leo.20180902120523.13"><vh>Python 3.8.2</vh>
 <v t="leo.20180902120523.14"><vh>P1</vh>
@@ -56,6 +56,15 @@
 <v t="leo.20200317195730.6"><vh>P3</vh>
 <v t="leo.20200317195730.7"><vh>SciTE p3</vh></v>
 </v>
+</v>
+<v t="leo.20200317211132.1"><vh>Tiny C Compiler</vh>
+<v t="leo.20200317211132.2"><vh>tcc p1</vh></v>
+</v>
+<v t="leo.20200317213433.1"><vh>Jupyterlab</vh>
+<v t="leo.20200317213433.2"><vh>Jupyterlab p1</vh></v>
+</v>
+<v t="leo.20200317213602.1"><vh>Fossil SCM</vh>
+<v t="leo.20200317213602.2"><vh>Fossil SCM p1</vh></v>
 </v>
 <v t="leo.20200317191453.1"><vh>Python 3.8.2</vh>
 <v t="leo.20200317191453.2"><vh>P1</vh>
@@ -97,7 +106,7 @@ Created by [40723150](https://s40723150.github.io/cd2020/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 投影片快捷鍵
+<t tx="leo.20180902120523.12"># 可攜系統配置
 
 * Python 3.8.2
 * SciTE
@@ -517,5 +526,49 @@ python get-pip.py
 ```
 pip install flask bs4 lxml pelican markdown flask_cors leo
 ```</t>
+<t tx="leo.20200317211132.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200317211132.2"># Tiny C Compiler
+```
+git clone https://github.com/TinyCC/tinycc.git tcc
+```
+git clone 整個倉儲到 data 目錄下並命名目錄為 tcc
+</t>
+<t tx="leo.20200317213433.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200317213433.2"># Jupyterlab
+```
+pip install jupyterlab==2.0.1
+```
+自動執行安裝
+</t>
+<t tx="leo.20200317213602.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200317213602.2"># Fossil SCM
+下載 [Fossil SCM](https://www.fossil-scm.org/) 解壓縮後將 fossil.exe 
+
+放到 data 目錄下
+</t>
 </tnodes>
 </leo_file>
