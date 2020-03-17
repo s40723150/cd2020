@@ -57,18 +57,154 @@ Created by [40723150](https://s40723150.github.io/cd2020/)
     <script type="text/template">
 # 投影片快捷鍵
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* Python 3.8.2
+* SciTE
+* PortableGit
+* MSYS2
+* Tiny C Compiler & Jupyterlab
+* Flutter & Fossil SCM
 
     </script>
 </section>
 
 
 						
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+# Python 3.8.2
+
+[下載Python3.8.2](https://www.python.org/downloads/release/python-382/) 的Windows x86-64 executable installer版本，下載完後，執行安裝
+
+<img src="./../images/python_customize_install.png" width="450" ></iframe>
+
+選Customize installation
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+取消選取pip選項
+
+<img src="./../images/python_CI_pip_uncheck.png" width="450" ></iframe>
+
+並執行安裝，安裝完成後將檔案放置py382的目錄下並移除安裝在電腦上的Python 3.8.2
+    </script>
+</section>
+
+
+
+						
+</section>
+
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+# SciTE
+
+[下載SciTE](https://www.scintilla.org/SciTEDownload.html) full 64-bit download版本
+
+載完後解壓縮檔案，並把檔案 wscite432搬移至 data 目錄底下再執行SciTE
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 切換到UTF-8編碼
+<img src="./../images/SciTE_UTF-8.gif" width="300"  ></iframe>
+
+將code.page=0切換成code.page=65001
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 開啟即時更新
+<img src="./../images/set_scite_loadon.gif" width="300"  ></iframe>
+
+將#load.on.activate=1拿掉井字號，儲存並關閉SciTE
+    </script>
+</section>
+
+
+
+						
+</section>
+
+<section data-markdown>
+    <script type="text/template">
+# MSYS2
+
+[下載MSYS2](https://www.msys2.org/) 下載 msys2-x86_64-20190524.exe 並執行
+
+選擇安裝目錄為CD2020\data\msys64
+    </script>
+</section>
+
+
+						
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+# PortableGit
+
+[下載PortableGit](https://git-scm.com/download/win) 選擇64-bit Git for Windows Portable
+
+安裝在data/portablegit目錄下
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 安裝pip
+到[get-pip.py](https://bootstrap.pypa.io/get-pip.py)頁面，另存新檔到CD2020/data執行
+
+```
+python get-pip.py
+```
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## pip 安裝模組
+
+安裝flask,bs4,xml,elican, mrkdown,flask_cors,leo模組
+
+```
+pip install flask bs4 lxml pelican markdown flask_cors leo
+```
+    </script>
+</section>
+
+
+
+						
+</section>
+
 <section>
 <section data-markdown>
     <script type="text/template">
