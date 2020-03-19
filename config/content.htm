@@ -145,6 +145,7 @@ EXIT</pre>
 <p><span>SciTE：</span><br/>到<span><a href="https://www.scintilla.org/SciTEDownload.html">https://www.scintilla.org/SciTEDownload.html</a></span>，下載 <span>” <a href="https://www.scintilla.org/wscite432.zip">full 64-bit download</a>”</span>，載完後解壓縮檔案，並把檔案 <span>”wscite432” </span>搬移至 <span>data </span>目錄底下(或是直接解壓縮到data目錄底下)，再到<span>CD2020\data\wscite432\wscite</span>目錄下執行<span>”SciTE.exe”</span>。</p>
 <p>開啟<span>SciTE</span>後，到 <span>Options</span>→<span>Open Global Option File </span>進行切換到<br/><sup><span>1</span></sup><span>UTF-8</span>編碼及開啟<sup><span>2</span></sup>即時更新：<br/><sup><span>1</span></sup> 將code.page=0更改成code.page=65001(切換到UTF-8編碼)<br/><img alt="" height="605" src="/images/SciTE_UTF-8.gif" width="450"/><br/><sup>2</sup> 將#load.on.activate=1的井字號拿掉(開啟即時更新)，儲存，關閉SciTE。<br/><img alt="" height="536" src="/images/set_scite_loadon.gif" width="450"/></p>
 <p>在<span>data</span>目錄下新增<span>”home”</span>目錄，開啟SciTE</p>
+<p><span>start.bat(儲存在CD2020目錄底下)</span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
 set Disk=y
 subst %Disk%: "data"
@@ -182,7 +183,7 @@ start /MIN %Disk%:\wscite432\wscite\SciTE.exe
 start /MIN %Disk%:\wscite432\wscite\SciTE.exe
 
 Exit</pre>
-<p>儲存成start.bat(在CD2020目錄底下)</p>
+<p>stop.bat(儲存在CD2020目錄底下)</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
 set Disk=y
 path=%PATH%;
