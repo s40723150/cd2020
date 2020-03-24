@@ -5,41 +5,48 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://s40723105.github.io/cd2020/blog/</loc>
-<lastmod>2020-03-24T00:44:32-00:00</lastmod>
+<lastmod>2020-03-24T21:34:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://s40723105.github.io/cd2020/blog/archives.html</loc>
-<lastmod>2020-03-24T00:44:32-00:00</lastmod>
+<lastmod>2020-03-24T21:34:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://s40723105.github.io/cd2020/blog/tags.html</loc>
-<lastmod>2020-03-24T00:44:32-00:00</lastmod>
+<lastmod>2020-03-24T21:34:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://s40723105.github.io/cd2020/blog/categories.html</loc>
-<lastmod>2020-03-24T00:44:32-00:00</lastmod>
+<lastmod>2020-03-24T21:34:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://s40723105.github.io/cd2020/blog/pages/about/</loc>
-<lastmod>2020-03-15T14:16:04+08:00</lastmod>
+<lastmod>2020-03-24T21:09:52+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://s40723105.github.io/cd2020/blog/2018-Fall-32-bit-Windows.html</loc>
+<lastmod>2018-09-10T11:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://s40723105.github.io/cd2020/blog/2020-Fall-64-bit-Windows.html</loc>
 <lastmod>2018-09-10T11:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -54,6 +61,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://s40723105.github.io/cd2020/blog/tag/2018fallcp.html</loc>
+<lastmod>2018-09-10T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://s40723105.github.io/cd2020/blog/tag/2020fallcd.html</loc>
 <lastmod>2018-09-10T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
