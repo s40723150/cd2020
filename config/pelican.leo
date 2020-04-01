@@ -29,7 +29,7 @@
 <v t="yen.20170108171733.6"><vh>@edit local_publishconf.py</vh></v>
 </v>
 <v t="yen.20170224232341.1"><vh>編輯 template</vh>
-<v t="leo.20180115093448.1"><vh>@path blog/theme/attila/templates</vh>
+<v t="leo.20180115093448.1"><vh>@path theme/attila/templates</vh>
 <v t="leo.20180715212936.1"><vh>@edit article.html</vh></v>
 <v t="leo.20180115093536.1"><vh>@edit base.html</vh></v>
 <v t="leo.20180115093657.1"><vh>@edit search.html</vh></v>
@@ -41,10 +41,10 @@
 </v>
 <v t="leo.20180115142025.1"><vh>保留之前舊的設定檔案</vh></v>
 </v>
-<v t="yen.20170224232341.2"><vh>@path blog/theme/pelican-bootstrap3_local/templates</vh>
+<v t="yen.20170224232341.2"><vh>@path theme/pelican-bootstrap3_local/templates</vh>
 <v t="yen.20170224232341.3"><vh>@edit base.html</vh></v>
 </v>
-<v t="leo.20170710015301.1"><vh>@path blog/theme/pelican-bootstrap3/templates</vh>
+<v t="leo.20170710015301.1"><vh>@path theme/pelican-bootstrap3/templates</vh>
 <v t="leo.20170710015311.1"><vh>@edit search.html</vh></v>
 <v t="leo.20170710095845.1"><vh>@edit base.html</vh></v>
 <v t="leo.20170710101854.1"><vh>@edit article.html</vh></v>
@@ -64,12 +64,6 @@
 </v>
 <v t="leo.20170710022054.1"><vh>可以另建節點存放 markdown 目錄下的 md 檔案</vh></v>
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
-<v t="leo.20180115115910.1"><vh>2018</vh>
-<v t="leo.20180423103639.1"><vh>2018 Fall CP 課程</vh>
-<v t="leo.20180423103656.1"><vh>@edit 20180910.md</vh></v>
-<v t="leo.20180909205246.1"><vh>@edit 20180911.md</vh></v>
-</v>
-</v>
 <v t="leo.20200329213145.1"><vh>2020</vh>
 <v t="leo.20200329213145.2"><vh>2020 CD 課程</vh>
 <v t="leo.20200329213145.5"><vh>@edit 20200324.md</vh></v>
@@ -103,9 +97,7 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20170908162904.1"></t>
 <t tx="leo.20180115093448.1"></t>
 <t tx="leo.20180115093726.1"></t>
-<t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180115142025.1"></t>
-<t tx="leo.20180423103639.1"></t>
 <t tx="leo.20200329213145.1"></t>
 <t tx="leo.20200329213145.2"></t>
 <t tx="yen.20170108171605.1"></t>
