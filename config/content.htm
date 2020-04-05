@@ -13,7 +13,8 @@
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>CD2020</h1>
+<h1>可攜系統</h1>
+<h4>CD2020</h4>
 <h4>Create Portable Programming System for Windows 10</h4>
 <p>在可攜系統目錄下先創一個 data 目錄</p>
 <p><span>PortableGit：<br/><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 下載 64-bit Git for Windows Portable 安裝在 data 目錄下</span></p>
@@ -83,7 +84,8 @@ taskkill /IM cmd.exe /F
 
 EXIT</pre>
 <p>詳細流程在<a href="https://s40723150.github.io/cd2020/content/W2.html">W2</a>頁面</p>
-<p>基礎可攜系統<a href="https://drive.google.com/file/d/15b_VXiaXYLqaMuMAvAeZKegX4eSkiU70/view">下載</a></p><h2>pip</h2>
+<p>基礎可攜系統<a href="https://drive.google.com/file/d/15b_VXiaXYLqaMuMAvAeZKegX4eSkiU70/view">下載</a></p>
+<h2>pip</h2>
 <h4><strong></strong>安裝pip</h4>
 <p>到<a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a>頁面，滑鼠右鍵另存新檔到CD2020/data執行</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python get-pip.py</pre>
@@ -92,7 +94,8 @@ EXIT</pre>
 <h4>安裝 CMSiMDE 所需模組</h4>
 <p><span>利用 pip 安裝 flask, bs4, lxml, pelican, markdown, flask_cors, leo (可單獨安裝區少的模組)</span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install flask bs4 lxml pelican markdown flask_cors leo</pre>
-<p></p><h2>SSH</h2>
+<p></p>
+<h2>SSH</h2>
 <h4>批次檔設定</h4>
 <p>執行隨身碟 SciTE.exe ( 位於 201906_fall\data\wscite415\wscite 目錄下 )</p>
 <p><span lang="zh-TW">開啟</span><span lang="zh-TW"><span face="Calibri"> start_mdecourse.bat 並加入</span></span></p>
@@ -138,7 +141,11 @@ EXIT</pre>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install  flask_cors</pre>
 <p><img alt="" height="156" src="/images/A_flask-cors.png" width="500"/></p>
 <h1>紀錄</h1>
-<p>W2：<br/>安裝 python, SciTE, Portablegit, msys2, <span>Tiny C Compiler, Jupyterlab, Fossil SCM, Leo Editor 和 Flutter 放入可攜系統(有先放先前的putty和ssh到測試是否可以順利使用ssh改版)</span></p><h2>W2</h2>
+<p>W2：<br/>安裝 python, SciTE, Portablegit, msys2, <span>Tiny C Compiler, Jupyterlab, Fossil SCM, Leo Editor 和 Flutter 放入可攜系統(有先放先前的putty和ssh到測試是否可以順利使用ssh改版)。</span></p>
+<p><span>W3：<br/><span>配置 webots 到可攜系統上，測試msys2裡建立gcc編譯環境。</span><br/></span></p>
+<p><span><span>W4：<br/>將 xelatex 配置到可攜系統上，完成測試msys2裡建立gcc編譯環境。<br/></span></span></p>
+<p><span><span>W5：<br/>將 CoppeliaSim 放到可攜系統上。將 leo 升級到6.2.1。<br/></span></span></p>
+<h2>W2</h2>
 <p>先創可攜系統的目錄 <span>”CD2020” </span>，在 <span>CD2020 </span>的目錄下新增 <span>”data”</span>。</p>
 <p>Python 3.8.2<br/>到 <span><a href="https://www.python.org/downloads/release/python-382/">https://www.python.org/downloads/release/python-382/</a> </span>搜尋<span>”Windows x86-64 executable installer”</span>並下載<span>”Windows x86-64 executable installer”</span>，下載完後，執行<span>python-3.8.2-amd64.exe</span></p>
 <p style="text-align: left;"><img alt="" height="244" src="/images/python_customize_install.png" width="400"/><br/><span>選Customize installation<br/><img alt="" height="246" src="/images/python_CI_pip_uncheck.png" width="400"/><br/>取消選取pip選項，Next<br/><img alt="" height="243" src="/images/python_CI_advamcedoption.png" width="400"/><br/>Install<br/>等它安裝完成<br/><img alt="" height="243" src="/images/python_setup_successful.png" width="400"/><br/>Close<br/></span><span>到剛剛安裝對應的目錄下去複製檔案<br/></span><img alt="" height="215" src="/images/python_files.png" width="400"/><br/>再先前創立的data目錄底下新增”py382”的目錄，再把複製到的檔案放到py382目錄裡</p>
@@ -214,3 +221,54 @@ EXIT</pre>
 <p><span>自動執行安裝</span></p>
 <p><span>Fossil SCM：</span><br/><a href="https://www.fossil-scm.org/">https://www.fossil-scm.org/</a><span> 下載 fossil scm 解壓縮後將 fossil.exe 放到 data 目錄下</span></p>
 <p>Putty：<br/>下載<a href="https://github.com/s40723150/cd2020/raw/master/downloads/putty.7z">putty</a>放到data裡面，把之前的ssh和.gitconfig放到home裡面測試是否可以成功用ssh推送資料。<br/><br/><br/></p>
+<h2>W3</h2>
+<p><a href="https://s40723150.github.io/cad2019/content/Webots.html">Webots設定</a></p>
+<p>MSYS2裡建立Windows 64位元環境下gcc編譯環境，安裝<span>mingw-w64-x86_64-gcc 與 mingw-w64-x86_64-toolchain。</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 安裝 mingw-w64-x86_64-gcc --&gt;
+pacman -S mingw-w64-x86_64-gcc
+&lt;!-- 安裝 mingw-w64-x86_64-toolchain --&gt;
+pacman -S mingw-w64-x86_64-toolchain</pre>
+<p>安裝完成後，測試編譯以下簡單的 C 程式：</p>
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">// hello.c
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, world!\n");
+    return 0;
+}</pre>
+<p>存在 tmp\c_ex 目錄下，命名為 hello.c然後利用：</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">gcc -o hello.exe hello.c</pre>
+<p>表示要將編譯 hello.c 的 output 設為 hello.exe 完成後，直接執行 hello.exe<br/><br/><br/></p><h2>W4 W5</h2>
+<p>xelatex：<br/>到 <a href="https://miktex.org/download">https://miktex.org/download</a> 下載，載下來的檔案重新命名為 <span>miktex-portable.exe ，再執行安裝。在 start.bat 納入 Y:\miktex-portable\texmfs\install\miktex\bin\x64 搜尋路徑，開啟隨身系統後，確定可以執行 xelatex。</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">set path_xelatex=%Disk%:\miktex-portable\texmfs\install\miktex\bin\x64;</pre>
+<p><span></span><span>將下列 LaTeX 存為 article.tex</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">% UTF-8 encoding
+% Compile with latex+dvipdfmx, pdflatex, xelatex or lualatex
+% XeLaTeX is recommanded
+\documentclass{article}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\begin{document}
+\LaTeX 文章内容。
+\end{document}</pre>
+<p><span>利用</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">xelatex article.tex</pre>
+<p>再測試</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">\documentclass[]{article}
+
+\usepackage{graphicx}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+
+\begin{document}
+
+90 degree rotation \rotatebox[origin=c]{90}{MDE 機械設計.}
+
+Vertical Flip \scalebox{1}[-1]{NFU 虎尾科大.}
+
+Horizontal Flip \scalebox{-1}[1]{台灣 Taiwan.}
+
+\end{document}</pre>
+<p></p>
+<p></p>
+<p>CoppeliaSim：<br/>下載 <a href="https://www.coppeliarobotics.com/downloads">CoppeliaSim</a> edu的版本，安裝後把資料搬到可攜系統下</p>

@@ -154,40 +154,79 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">pip << <a href='pip.html'>Previous</a> <a href='Q&A.html'>Next</a> >> Q&A<br /><h1>SSH</h1>
-<h4>批次檔設定</h4>
-<p>執行隨身碟 SciTE.exe ( 位於 201906_fall\data\wscite415\wscite 目錄下 )</p>
-<p><span lang="zh-TW">開啟</span><span lang="zh-TW"><span face="Calibri"> start_mdecourse.bat 並加入</span></span></p>
-<p lang="x-none">REM for putty</p>
-<p lang="x-none">Set GIT_HOME=%Cdisk%:\portablegit\bin\</p>
-<p lang="x-none">Set GIT_SSH=%Disk%:\putty\plink.exe</p>
-<h4>SSH 設定</h4>
-<p><span lang="zh-TW">到 </span><span lang="en-US">.ssh </span><span lang="zh-TW">的目錄下<br/></span><span lang="x-none"><span face="Microsoft JhengHei">編輯 </span></span><span lang="x-none">config,插入</span></p>
-<p><span lang="en-US">P</span><span lang="x-none">roxy Command y:/putty/plink.exe github.com %h %p</span></p>
-<p><span lang="x-none">並註解掉</span></p>
-<p><span lang="x-none">IdentityFile "y:\home_mdecourse\.ssh\id_rsa"</span></p>
-<p><span lang="x-none"><img caption="false" height="139" src="https://s40723150.github.io/cad2019/images/SciTE_ssh_config.png" width="400"/></span></p>
-<h4>設定 SSH key 的使用配置 ( 使用 Ipv 6 網路 )</h4>
-<p>先下載 <a href="http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html">putty</a>  , 放到可攜系統的 data 目錄底下</p>
-<h4>Key 轉換 ( 此設定方法是拿先前的 <span>Open SSH key</span><span> </span>)</h4>
-<p>先建立一個 key ( 若之前已經有 Open SSH 的 key 就可以直接用那把 key )<br/>執行 puttygen.exe <br/>載入一個 <span>Open SSH 的 key</span></p>
-<p><img alt="" height="400" src="https://s40723150.github.io/cad2019/images/puttygen_loadkey.png" width="398"/></p>
-<p>*p.s.  若是使用之前的 key , bits 數請寄的設定為 4096 , 轉換成的類型請設定成 rsa <br/>轉存成 rsa 的 prviate key ( ppk檔 )</p>
-<p><img alt="" height="400" src="https://s40723150.github.io/cad2019/images/puttygen_privatekey.png" width="398"/></p>
-<h4>Putty 設定</h4>
-<p>執行 putty.exe<br/>建立一個 session 叫 github.com</p>
-<p>Host Name : github.com<br/>Port : 22<br/>Connection type : SSH</p>
-<p><img alt="" height="400" src="https://s40723150.github.io/cad2019/images/putty_set_session.png" width="401"/></p>
-<p>設定 proxy：</p>
-<p>Proxy type : HTTP<br/><span>Proxy hostname :  [2001:288:6004:17::7]     Port : 3128<br/></span>Do DNS name lookup at proxy end :  Auto<br/>Username :  kmolab<br/>Password : kmolab</p>
-<p><img alt="" height="400" src="https://s40723150.github.io/cad2019/images/putty_set_proxy.png" width="401"/></p>
-<p>設定 SSH 底下的 Auth</p>
-<p><span lang="x-none">Private key file for authentication :  </span><span lang="en-US">( 請指定 rsa-</span><span lang="x-none">key<span> </span></span><span lang="zh-TW">的位置 </span><span lang="en-US">)</span></p>
-<p><span lang="en-US"><img alt="" height="400" src="https://s40723150.github.io/cad2019/images/putty_set_ssh_auth.png" width="401"/></span></p>
-<p><span lang="en-US">*p.s.  需指定 ppk 檔</span></p>
-<p><span lang="en-US">儲存 session 設定</span></p>
-<p><span lang="en-US"><img alt="" height="400" src="https://s40723150.github.io/cad2019/images/putty_save.png" width="401"/></span></p>
-<br />pip << <a href='pip.html'>Previous</a> <a href='Q&A.html'>Next</a> >> Q&A</div>
+    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <a href='pip.html'>Next</a> >> pip<br /><h1>可攜系統</h1>
+<h4>CD2020</h4>
+<h4>Create Portable Programming System for Windows 10</h4>
+<p>在可攜系統目錄下先創一個 data 目錄</p>
+<p><span>PortableGit：<br/><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 下載 64-bit Git for Windows Portable 安裝在 data 目錄下</span></p>
+<p><span>MSYS2：<br/><a href="https://www.msys2.org/">https://www.msys2.org/</a> 下載 msys2-x86_64-20190524.exe 並安裝在 data/msys64 的目錄下</span></p>
+<p><span>python3.8.1：<br/></span><a class="link" href="https://www.python.org/downloads/windows/" rel="nofollow noopener noreferrer" target="_blank">https://www.python.org/downloads/windows/</a><span><span> </span>下載 Download Windows x86-64 executable installer 準備安裝 3.8.2 python 解譯器，安裝完成後將完整資料放在 data/py381目錄底下</span></p>
+<p><span>SciTE：<a href="https://www.scintilla.org/SciTEDownload.html">https://www.scintilla.org/SciTEDownload.html</a> 下載 full 64-bit download，解壓縮檔案至 data/wscite432，就是可以直接執行的 Scite.exe 編輯器，若希望以 UtF-8 編碼開啟文件，就必須啟用 Options 下拉式功能表中的 Global Options File（同 SciTEGlobal.properties 檔案）其中的預設值 code.page=0 （為Windows 內定的 Big-5 編碼）修改設定為 code.page=65001，表示使用使 UTF-8 編碼，若要開啟即時更新內容，將load.on.activate=1 前面的井字號拿掉，就會即時更新了（SciTE 須重啟）<br/><img caption="false" height="538" src="./../images/SciTE_UTF-8.gif" width="400"/><br/>修改成 UTF-8 編碼<br/><img caption="false" height="476" src="./../images/set_scite_loadon.gif" width="400"/><br/>修改成即時更新</span></p>
+<p><span>Tiny C Compiler：<br/></span><span><a href="https://github.com/TinyCC/tinycc">https://github.com/TinyCC/tinycc</a> git clone 整個倉儲到 data 目錄下並命名目錄為 tcc</span></p>
+<p><span>Jupyterlab：<br/><a href="https://github.com/jupyterlab/jupyterlab">https://github.com/jupyterlab/jupyterlab</a> pip install jupyterlab==2.0.1 自動執行安裝</span></p>
+<p><span>Fossil SCM：<br/><a href="https://www.fossil-scm.org/">https://www.fossil-scm.org/</a> 下載 fossil scm 解壓縮後將 fossil.exe 放到 data 目錄下</span></p>
+<p><span>Flutter：<br/><a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter </a> (在 data 目錄底下 git clone https://github.com/flutter/flutter.git -b stable)<br/></span></p>
+<p><span>Visual Studio Code：<br/><a href="https://github.com/microsoft/vscode">https://github.com/microsoft/vscode</a> (目前是先安裝，安裝完成後把資料放 data/vscode 目錄下)</span></p>
+<p>home/home_mdecourse：存放 ssh 的資料和.gitconfig</p>
+<p>tmp：放 clone 下來的倉儲</p>
+<p>ShareX：<a href="https://getsharex.com/downloads/">https://getsharex.com/downloads/</a></p>
+<p>putty：<a href="http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html">老師整理的 putty</a> 或 <a href="https://github.com/s40723150/cd2020/raw/master/downloads/putty.7z">個人整理的 putty.7z</a></p>
+<p>start.bat</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+subst %Disk%: "data"
+
+%Disk%:
+
+set HomePath=%Disk%:\home
+set HomeDrive=%Disk%:\home
+set Home=%Disk%:\home
+set USERPROFILE=%Disk%:\home
+
+REM 將系統 Python 程式的 io 設為 utf-8
+set PYTHONIOENCODING="utf-8"
+
+#REM for putty
+#Set GIT_HOME=%CDisk%:\portablegit\bin\
+#Set GIT_SSH=%Disk%:\putty\plink.exe
+
+set PYTHONPATH=%Disk%:\py382\DLLs;%Disk%:\py382\Lib;%Disk%:\py382\Lib\site-packages;
+set PYTHONHOME=%Disk%:\py382
+
+set path_python=%Disk%:\py382;%Disk%:\py382\Scripts;
+set path_msys2=%Disk%:\msys64\mingw64\bin;
+set path_git=%Disk%:\portablegit\bin;
+set path_tcc=%Disk%:\tcc;
+
+path=%Disk%:;%path_python%;%path_msys2%;%path_git%;%path_tcc%;
+
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+
+start /MIN %Disk%:\wscite432\wscite\SciTE.exe
+start /MIN %Disk%:\wscite432\wscite\SciTE.exe
+
+Exit</pre>
+<p>stop.bat</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+path=%PATH%;
+
+taskkill /IM python.exe /F
+taskkill /IM pythonw.exe /F
+taskkill /IM scite.exe /F
+
+REM 終止虛擬硬碟與目錄的對應
+subst %Disk%: /D
+REM 關閉 cmd 指令視窗
+taskkill /IM cmd.exe /F
+
+EXIT</pre>
+<p>詳細流程在<a href="https://s40723150.github.io/cd2020/content/W2.html">W2</a>頁面</p>
+<p>基礎可攜系統<a href="https://drive.google.com/file/d/15b_VXiaXYLqaMuMAvAeZKegX4eSkiU70/view">下載</a></p>
+<br />Develop << <a href='Develop.html'>Previous</a> <a href='pip.html'>Next</a> >> pip</div>
         
     <!-- footer -->
       <div class="container">
