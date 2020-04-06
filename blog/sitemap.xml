@@ -4,64 +4,78 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>./</loc>
-<lastmod>2020-04-03T17:48:19-00:00</lastmod>
+<loc>https://s40723150.github.io/cd2020/blog/</loc>
+<lastmod>2020-04-06T09:22:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./archives.html</loc>
-<lastmod>2020-04-03T17:48:19-00:00</lastmod>
+<loc>https://s40723150.github.io/cd2020/blog/archives.html</loc>
+<lastmod>2020-04-06T09:22:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tags.html</loc>
-<lastmod>2020-04-03T17:48:19-00:00</lastmod>
+<loc>https://s40723150.github.io/cd2020/blog/tags.html</loc>
+<lastmod>2020-04-06T09:22:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./categories.html</loc>
-<lastmod>2020-04-03T17:48:19-00:00</lastmod>
+<loc>https://s40723150.github.io/cd2020/blog/categories.html</loc>
+<lastmod>2020-04-06T09:22:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./pages/about/</loc>
-<lastmod>2020-04-03T17:47:58+08:00</lastmod>
+<loc>https://s40723150.github.io/cd2020/blog/pages/about/</loc>
+<lastmod>2020-04-05T14:27:50+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./2020-Fall-64-bit-Windows.html</loc>
+<loc>https://s40723150.github.io/cd2020/blog/Leo Editor.html</loc>
+<lastmod>2020-04-03T00:00:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://s40723150.github.io/cd2020/blog/CD2020-Fall.html</loc>
 <lastmod>2020-03-24T00:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./category/misc.html</loc>
+<loc>https://s40723150.github.io/cd2020/blog/category/leo-editor.html</loc>
+<lastmod>2020-04-03T00:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://s40723150.github.io/cd2020/blog/category/misc.html</loc>
 <lastmod>2020-03-24T00:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tag/2020fallcd.html</loc>
-<lastmod>2020-03-24T00:00:00+08:06</lastmod>
+<loc>https://s40723150.github.io/cd2020/blog/tag/2020fallcd.html</loc>
+<lastmod>2020-04-03T00:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./author/40723150.html</loc>
-<lastmod>2020-03-24T00:00:00+08:06</lastmod>
+<loc>https://s40723150.github.io/cd2020/blog/author/40723150.html</loc>
+<lastmod>2020-04-03T00:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

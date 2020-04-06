@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同產品設計實習 - Leo Editor</title><link href="https://s40723150.github.io/cd2020/blog/" rel="alternate"></link><link href="https://s40723150.github.io/cd2020/blog/feeds/leo-editor.atom.xml" rel="self"></link><id>https://s40723150.github.io/cd2020/blog/</id><updated>2020-04-03T00:00:00+08:00</updated><entry><title>2020 Fall CD 課程</title><link href="https://s40723150.github.io/cd2020/blog/Leo%20Editor.html" rel="alternate"></link><published>2020-04-03T00:00:00+08:00</published><updated>2020-04-03T00:00:00+08:00</updated><author><name>40723150</name></author><id>tag:s40723150.github.io,2020-04-03:/cd2020/blog/Leo Editor.html</id><summary type="html">&lt;p&gt;Leo Editor 已從當前的 6.1 版本更新成 6.2.1版&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;Leo Editor 已從當前的 6.1 版本更新成 6.2.1版&lt;/p&gt;
+
+
+&lt;p&gt;先解除安裝 Leo 6.1 版本
+&lt;pre class="brush: python"&gt;
+pip uninstall leo
+&lt;/pre&gt;
+再執行
+&lt;pre class="brush: python"&gt;
+pip install leo==6.2.1
+&lt;/pre&gt;
+安裝 Leo 6.2.1&lt;/p&gt;</content><category term="Leo Editor"></category><category term="2020FallCD"></category></entry></feed>
