@@ -1,19 +1,10 @@
 <h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>可攜系統</h1>
+<p><span>Repository</span>：<a href="https://github.com/s40723150/cd2020">https://github.com/s40723150/cd2020</a></p>
+<p>Blog：<a href="https://s40723150.github.io/cd2020/blog/index.html">https://s40723150.github.io/cd2020/blog</a></p>
+<p><span>Presentation：<a href="https://s40723150.github.io/cd2020/reveal">https://s40723150.github.io/cd2020/reveal<br/></a></span></p>
+<p><span>Group Repository：<a href="https://github.com/s40723150/cd2020ag2">https://github.com/s40723150/cd2020ag2</a></span></p>
+<p><span>Group Presentation：<a href="https://s40723150.github.io/cd2020ag2/reveal">https://s40723150.github.io/cd2020ag2/reveal</a></span></p>
+<p><span></span></p><h1>可攜系統</h1>
 <h4>CD2020</h4>
 <h4>Create Portable Programming System for Windows 10</h4>
 <p>在可攜系統目錄下先創一個 data 目錄</p>
@@ -84,7 +75,8 @@ taskkill /IM cmd.exe /F
 
 EXIT</pre>
 <p>詳細流程在<a href="https://s40723150.github.io/cd2020/content/W2.html">W2</a>頁面</p>
-<p>基礎可攜系統<a href="https://drive.google.com/file/d/15b_VXiaXYLqaMuMAvAeZKegX4eSkiU70/view">下載<br/></a><a href="https://drive.google.com/open?id=1Ghi3rTB-HIZEn49PWgfOap7aha2UZvK9">有配置Webots<br/></a><a href="https://drive.google.com/open?id=1TN1NWb0rj675Ld-mb4QRNn-0ECRb2eZG">有配置Webots+</a><span><a href="https://drive.google.com/open?id=1TN1NWb0rj675Ld-mb4QRNn-0ECRb2eZG">CoppeliaSim</a>(含</span><span>xelatex)</span></p><h2>pip</h2>
+<p>基礎可攜系統<a href="https://drive.google.com/file/d/15b_VXiaXYLqaMuMAvAeZKegX4eSkiU70/view">下載<br/></a><a href="https://drive.google.com/open?id=1Ghi3rTB-HIZEn49PWgfOap7aha2UZvK9">有配置Webots<br/></a><a href="https://drive.google.com/open?id=1TN1NWb0rj675Ld-mb4QRNn-0ECRb2eZG">有配置Webots+</a><span><a href="https://drive.google.com/open?id=1TN1NWb0rj675Ld-mb4QRNn-0ECRb2eZG">CoppeliaSim</a>(含</span><span>xelatex)<br/>P.S. 可以下載可攜系統的leo都已經升級到6.2.1版本了</span></p>
+<h2>pip</h2>
 <h4><strong></strong>安裝pip</h4>
 <p>到<a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a>頁面，滑鼠右鍵另存新檔到CD2020/data執行</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python get-pip.py</pre>
@@ -98,7 +90,8 @@ EXIT</pre>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip uninstall leo</pre>
 <p>安裝Leo 6.2.1版本</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install leo==6.2.1</pre>
-<p></p><h2>SSH</h2>
+<p></p>
+<h2>SSH</h2>
 <h4>批次檔設定</h4>
 <p>執行隨身碟 SciTE.exe ( 位於 201906_fall\data\wscite415\wscite 目錄下 )</p>
 <p><span lang="zh-TW">開啟</span><span lang="zh-TW"><span face="Calibri"> start_mdecourse.bat 並加入</span></span></p>
@@ -241,7 +234,8 @@ int main() {
 }</pre>
 <p>存在 tmp\c_ex 目錄下，命名為 hello.c然後利用：</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">gcc -o hello.exe hello.c</pre>
-<p>表示要將編譯 hello.c 的 output 設為 hello.exe 完成後，直接執行 hello.exe<br/><br/><br/></p><h2>W4 W5</h2>
+<p>表示要將編譯 hello.c 的 output 設為 hello.exe 完成後，直接執行 hello.exe<br/><br/><br/></p>
+<h2>W4 W5</h2>
 <p>xelatex：<br/>到 <a href="https://miktex.org/download">https://miktex.org/download</a> 下載，載下來的檔案重新命名為 <span>miktex-portable.exe ，再執行安裝。在 start.bat 納入 Y:\miktex-portable\texmfs\install\miktex\bin\x64 搜尋路徑，開啟隨身系統後，確定可以執行 xelatex。</span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">set path_xelatex=%Disk%:\miktex-portable\texmfs\install\miktex\bin\x64;</pre>
 <p><span></span><span>將下列 LaTeX 存為 article.tex</span></p>
