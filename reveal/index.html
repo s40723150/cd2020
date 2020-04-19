@@ -132,7 +132,6 @@ pip install flask bs4 lxml pelican markdown flask_cors leo
 
 						
 </section>
-
 <section>
 <section data-markdown>
     <script type="text/template">
@@ -244,21 +243,135 @@ pip install jupyterlab==2.0.1
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
+ ## xelatex 下載及安裝
+ 
+下載[xelatex](https://miktex.org/download)
+
+載下來的檔案重新命名為 miktex-portable.exe 
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## xelatex 設定
+在 start.bat 納入 
+```
+set path_xelatex=%Disk%:\miktex-portable\texmfs\install\miktex\bin\x64; 
+```
+開啟隨身系統後，測試 xelatex是否順利執行
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## xelatex 測試
+將下列 LaTeX 存為 article.tex
+```
+% UTF-8 encoding
+% Compile with latex+dvipdfmx, pdflatex, xelatex or lualatex
+% XeLaTeX is recommanded
+\documentclass{article}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\begin{document}
+\LaTeX 文章内容。
+\end{document}
+```
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## xelatex 測試
+利用
+```
+xelatex article.tex
+```
+將 article.tex 轉換成 article.pdf
+    </script>
+</section>
+</section>
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## W2
+安裝 python, SciTE, Portablegit, msys2, 
+
+Tiny C Compiler, Jupyterlab, Fossil SCM, 
+
+Leo Editor 和 Flutter 放入可攜系統
+
+<!--(有先放先前的putty和ssh到測試是否可以順利使用ssh改版)-->
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## W3
+配置 webots 到可攜系統上
+
+測試msys2裡建立gcc編譯環境
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## W4
+將 xelatex 配置到可攜系統上
+
+完成測試msys2裡建立gcc編譯環境
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## W5
+將 [CoppeliaSim](https://www.coppeliarobotics.com/) 放到可攜系統上
+
+將 leo 升級到6.2.1
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## W6
+* 協助同組同學完成OBS的設定
+
+* 解決OBS顯示器擷取的問題
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## W7
+* 整理分組和個人網頁內容
+
+* 整理電子書重點
+
+* 解決OBS和Youtube Live stream時畫面模糊還有聲音太小聲的問題
+    </script>
+</section>
+</section>
+<!--
+<section>
+<!--
+<section data-markdown>
+    <script type="text/template">
+#請注意, @others 不可以內縮#
 # 數學符號與方程式
 
 Inline math equations go in like so: $\omega = d\phi / dt$. Display
 math should get its own line and be put in in double-dollarsigns:
 
 $$I = \int \rho R^{2} dV$$
-    </script>
+   </script>
 </section>
 
 
-
 						
-<section data-markdown>
+<!--<section data-markdown>
     <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
 ## 利用 Markdown 寫投影片
 以下利用 Markdown 格式展示 Python 程式碼:
 ```
@@ -287,24 +400,22 @@ make.start()
 ```
     </script>
 </section>
-
-
-
-						
-<section data-markdown>
+<!--<section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+
+ ## 使用 iframe 導入影片
 
 ### 導入影片 template
 
 <iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ 
+-->
     </script>
 </section>
 
 
 						
 </section>
-
 </div>
 
 </div>

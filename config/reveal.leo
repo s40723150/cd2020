@@ -66,15 +66,49 @@
 <v t="leo.20200317213602.1"><vh>Fossil SCM</vh>
 <v t="leo.20200317213602.2"><vh>Fossil SCM p1</vh></v>
 </v>
-<v t="leo.20200317191453.1"><vh>Python 3.8.2</vh>
-<v t="leo.20200317191453.2"><vh>P1</vh>
-<v t="leo.20200317191453.3"><vh>Python 3.8.2 p1</vh></v>
+<v t="leo.20200419214004.1"><vh>xelatex</vh>
+<v t="leo.20200419214033.1"><vh>Latex P1</vh>
+<v t="leo.20200419214116.1"><vh>how to download and setup</vh></v>
 </v>
-<v t="leo.20200317191453.4"><vh>導入縮排程式碼</vh>
-<v t="leo.20200317191453.5"><vh>引用程式碼</vh></v>
+<v t="leo.20200419214418.1"><vh>Latex P2</vh>
+<v t="leo.20200419214418.2"><vh>how to setting</vh></v>
 </v>
-<v t="leo.20200317191453.6"><vh>導入影片</vh>
-<v t="leo.20200317191453.7"><vh>iframe 導入影片</vh></v>
+<v t="leo.20200419220440.1"><vh>Latex P3</vh>
+<v t="leo.20200419220440.2"><vh>how to test1</vh></v>
+</v>
+<v t="leo.20200419220552.1"><vh>Latex P4</vh>
+<v t="leo.20200419220552.2"><vh>how to test2</vh></v>
+</v>
+</v>
+<v t="leo.20200419220944.1"><vh>進度</vh>
+<v t="leo.20200419220944.2"><vh>W2</vh>
+<v t="leo.20200419220944.3"><vh>W2 content</vh></v>
+</v>
+<v t="leo.20200419220944.4"><vh>W3</vh>
+<v t="leo.20200419220944.5"><vh>W3 content</vh></v>
+</v>
+<v t="leo.20200419220944.6"><vh>W4</vh>
+<v t="leo.20200419220944.7"><vh>W4 content</vh></v>
+</v>
+<v t="leo.20200419220944.8"><vh>W5</vh>
+<v t="leo.20200419220944.9"><vh>W5 content</vh></v>
+</v>
+<v t="leo.20200419221604.1"><vh>W6</vh>
+<v t="leo.20200419221604.2"><vh>W6 content</vh></v>
+</v>
+<v t="leo.20200419222642.1"><vh>W7</vh>
+<v t="leo.20200419222642.2"><vh>W7 content</vh></v>
+</v>
+</v>
+<v t="leo.20200419213552.1"><vh>各式內容引用範例</vh>
+<v t="leo.20200419213552.2"><vh>導入數學符號與方程式</vh>
+<v t="leo.20200419213552.3"><vh>LaTeX 格式方程式</vh></v>
+</v>
+<v t="leo.20200419213552.4"><vh>導入縮排程式碼</vh>
+<v t="leo.20200419213552.5"><vh>引用程式碼</vh></v>
+</v>
+<v t="leo.20200419213552.6"><vh>導入影片</vh>
+<v t="leo.20200419213552.7"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
 </v>
@@ -119,7 +153,6 @@ Created by [40723150](https://s40723150.github.io/cd2020/)
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
-
 </t>
 <t tx="leo.20180902120523.14">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -325,83 +358,6 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
-<t tx="leo.20200317191453.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-
-</t>
-<t tx="leo.20200317191453.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="leo.20200317191453.3"># 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-</t>
-<t tx="leo.20200317191453.4">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="leo.20200317191453.5">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-</t>
-<t tx="leo.20200317191453.6">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20200317191453.7">## 使用 iframe 導入影片
-
-### 導入影片 template
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
 <t tx="leo.20200317193302.1">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -570,5 +526,207 @@ pip install jupyterlab==2.0.1
 
 放到 data 目錄下
 </t>
+<t tx="leo.20200419213552.1">&lt;!--
+&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20200419213552.2">&lt;!--
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+#請注意, @others 不可以內縮#
+@others
+   &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200419213552.3"># 數學符號與方程式
+
+Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:
+
+$$I = \int \rho R^{2} dV$$
+</t>
+<t tx="leo.20200419213552.4">&lt;!--&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20200419213552.5">## 利用 Markdown 寫投影片
+以下利用 Markdown 格式展示 Python 程式碼:
+```
+@language python
+# use threading and subprocess to threading the make process
+import os
+import subprocess
+import threading
+
+def domake():
+    
+    path = "../exposed/api/exposed"
+    ubuntu = "../Ubuntu"
+    
+    # create obj path
+    
+    if not os.path.exists(path+"/../obj"):
+        os.makedirs(path+"/../obj")
+    
+    subprocess.call(["make", "clean"], cwd=path)
+    subprocess.call("make", cwd=path)
+    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
+    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
+    
+make = threading.Thread(target=domake)
+make.start()
+```
+</t>
+<t tx="leo.20200419213552.6">&lt;!--&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200419213552.7">
+ ## 使用 iframe 導入影片
+
+### 導入影片 template
+
+&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ 
+--&gt;</t>
+<t tx="leo.20200419214004.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20200419214033.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419214116.1"> ## xelatex 下載及安裝
+ 
+下載[xelatex](https://miktex.org/download)
+
+載下來的檔案重新命名為 miktex-portable.exe </t>
+<t tx="leo.20200419214418.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419214418.2"> ## xelatex 設定
+在 start.bat 納入 
+```
+set path_xelatex=%Disk%:\miktex-portable\texmfs\install\miktex\bin\x64; 
+```
+開啟隨身系統後，測試 xelatex是否順利執行</t>
+<t tx="leo.20200419220440.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419220440.2"> ## xelatex 測試
+將下列 LaTeX 存為 article.tex
+```
+% UTF-8 encoding
+% Compile with latex+dvipdfmx, pdflatex, xelatex or lualatex
+% XeLaTeX is recommanded
+\documentclass{article}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\begin{document}
+\LaTeX 文章内容。
+\end{document}
+```</t>
+<t tx="leo.20200419220552.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419220552.2"> ## xelatex 測試
+利用
+```
+xelatex article.tex
+```
+將 article.tex 轉換成 article.pdf</t>
+<t tx="leo.20200419220944.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20200419220944.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419220944.3">## W2
+安裝 python, SciTE, Portablegit, msys2, 
+
+Tiny C Compiler, Jupyterlab, Fossil SCM, 
+
+Leo Editor 和 Flutter 放入可攜系統
+
+&lt;!--(有先放先前的putty和ssh到測試是否可以順利使用ssh改版)--&gt;</t>
+<t tx="leo.20200419220944.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419220944.5">## W3
+配置 webots 到可攜系統上
+
+測試msys2裡建立gcc編譯環境</t>
+<t tx="leo.20200419220944.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419220944.7">## W4
+將 xelatex 配置到可攜系統上
+
+完成測試msys2裡建立gcc編譯環境</t>
+<t tx="leo.20200419220944.8">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419220944.9">## W5
+將 [CoppeliaSim](https://www.coppeliarobotics.com/) 放到可攜系統上
+
+將 leo 升級到6.2.1</t>
+<t tx="leo.20200419221604.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419221604.2"> ## W6
+* 協助同組同學完成OBS的設定
+
+* 解決OBS顯示器擷取的問題</t>
+<t tx="leo.20200419222642.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200419222642.2"> ## W7
+* 整理分組和個人網頁內容
+
+* 整理電子書重點
+
+* 解決OBS和Youtube Live stream時畫面模糊還有聲音太小聲的問題</t>
 </tnodes>
 </leo_file>
