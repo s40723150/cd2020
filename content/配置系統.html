@@ -154,40 +154,78 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W3 << <a href='W3.html'>Previous</a> <br /><h1>W4 W5</h1>
-<p>xelatex：<br/>到 <a href="https://miktex.org/download">https://miktex.org/download</a> 下載，載下來的檔案重新命名為 <span>miktex-portable.exe ，再執行安裝。在 start.bat 納入 Y:\miktex-portable\texmfs\install\miktex\bin\x64 搜尋路徑，開啟隨身系統後，確定可以執行 xelatex。</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">set path_xelatex=%Disk%:\miktex-portable\texmfs\install\miktex\bin\x64;</pre>
-<p><span></span><span>將下列 LaTeX 存為 article.tex</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">% UTF-8 encoding
-% Compile with latex+dvipdfmx, pdflatex, xelatex or lualatex
-% XeLaTeX is recommanded
-\documentclass{article}
-\usepackage{xeCJK}
-\setCJKmainfont{SimSun}
-\begin{document}
-\LaTeX 文章内容。
-\end{document}</pre>
-<p><span>利用</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">xelatex article.tex</pre>
-<p>再測試</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">\documentclass[]{article}
+    <div id="tipue_search_content">可攜系統 << <a href='可攜系統.html'>Previous</a> <a href='pip.html'>Next</a> >> pip<br /><h1>配置系統</h1>
+<h4>Create Portable Programming System for Windows 10</h4>
+<p>在可攜系統目錄下先創一個 data 目錄</p>
+<p><span>PortableGit：<br/><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 下載 64-bit Git for Windows Portable 安裝在 data 目錄下</span></p>
+<p><span>MSYS2：<br/><a href="https://www.msys2.org/">https://www.msys2.org/</a> 下載 msys2-x86_64-20190524.exe 並安裝在 data/msys64 的目錄下</span></p>
+<p><span>python3.8.1：<br/></span><a class="link" href="https://www.python.org/downloads/windows/" rel="nofollow noopener noreferrer" target="_blank">https://www.python.org/downloads/windows/</a><span><span> </span>下載 Download Windows x86-64 executable installer 準備安裝 3.8.2 python 解譯器，安裝完成後將完整資料放在 data/py381目錄底下</span></p>
+<p><span>SciTE：<a href="https://www.scintilla.org/SciTEDownload.html">https://www.scintilla.org/SciTEDownload.html</a> 下載 full 64-bit download，解壓縮檔案至 data/wscite432，就是可以直接執行的 Scite.exe 編輯器，若希望以 UtF-8 編碼開啟文件，就必須啟用 Options 下拉式功能表中的 Global Options File（同 SciTEGlobal.properties 檔案）其中的預設值 code.page=0 （為Windows 內定的 Big-5 編碼）修改設定為 code.page=65001，表示使用使 UTF-8 編碼，若要開啟即時更新內容，將load.on.activate=1 前面的井字號拿掉，就會即時更新了（SciTE 須重啟）<br/><img caption="false" height="538" src="./../images/SciTE_UTF-8.gif" width="400"/><br/>修改成 UTF-8 編碼<br/><img caption="false" height="476" src="./../images/set_scite_loadon.gif" width="400"/><br/>修改成即時更新</span></p>
+<p><span>Tiny C Compiler：<br/></span><span><a href="https://github.com/TinyCC/tinycc">https://github.com/TinyCC/tinycc</a> git clone 整個倉儲到 data 目錄下並命名目錄為 tcc</span></p>
+<p><span>Jupyterlab：<br/><a href="https://github.com/jupyterlab/jupyterlab">https://github.com/jupyterlab/jupyterlab</a> pip install jupyterlab==2.0.1 自動執行安裝</span></p>
+<p><span>Fossil SCM：<br/><a href="https://www.fossil-scm.org/">https://www.fossil-scm.org/</a> 下載 fossil scm 解壓縮後將 fossil.exe 放到 data 目錄下</span></p>
+<p><span>Flutter：<br/><a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter </a> (在 data 目錄底下 git clone https://github.com/flutter/flutter.git -b stable)<br/></span></p>
+<p><span>Visual Studio Code：<br/><a href="https://github.com/microsoft/vscode">https://github.com/microsoft/vscode</a> (目前是先安裝，安裝完成後把資料放 data/vscode 目錄下)</span></p>
+<p>CoppeliaSim：<span><a href="https://www.coppeliarobotics.com/winVersions"><br/>https://www.coppeliarobotics.com/winVersions</a> 下載 <a href="https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_0_0_Win.zip">CoppeliaSim Edu, Binaries</a> 解壓縮後放到 data 目錄下</span></p>
+<p>home/home_mdecourse：存放 ssh 的資料和.gitconfig</p>
+<p>tmp：放 clone 下來的倉儲</p>
+<p>ShareX：<a href="https://getsharex.com/downloads/">https://getsharex.com/downloads/</a></p>
+<p>putty：<a href="http://mde.tw/cp2019/content/USB%20%E7%A8%8B%E5%BC%8F%E7%B3%BB%E7%B5%B1.html">老師整理的 putty</a> 或 <a href="https://github.com/s40723150/cd2020/raw/master/downloads/putty.7z">個人整理的 putty.7z</a></p>
+<p>start.bat</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+subst %Disk%: "data"
 
-\usepackage{graphicx}
-\usepackage{xeCJK}
-\setCJKmainfont{SimSun}
+%Disk%:
 
-\begin{document}
+set HomePath=%Disk%:\home
+set HomeDrive=%Disk%:\home
+set Home=%Disk%:\home
+set USERPROFILE=%Disk%:\home
 
-90 degree rotation \rotatebox[origin=c]{90}{MDE 機械設計.}
+REM 將系統 Python 程式的 io 設為 utf-8
+set PYTHONIOENCODING="utf-8"
 
-Vertical Flip \scalebox{1}[-1]{NFU 虎尾科大.}
+#REM for putty
+#Set GIT_HOME=%CDisk%:\portablegit\bin\
+#Set GIT_SSH=%Disk%:\putty\plink.exe
 
-Horizontal Flip \scalebox{-1}[1]{台灣 Taiwan.}
+set PYTHONPATH=%Disk%:\py382\DLLs;%Disk%:\py382\Lib;%Disk%:\py382\Lib\site-packages;
+set PYTHONHOME=%Disk%:\py382
 
-\end{document}</pre>
-<p></p>
-<p></p>
-<p>CoppeliaSim：<br/>下載 <a href="https://www.coppeliarobotics.com/downloads">CoppeliaSim</a> edu的版本，安裝後把資料搬到可攜系統下</p><br />W3 << <a href='W3.html'>Previous</a> </div>
+set path_python=%Disk%:\py382;%Disk%:\py382\Scripts;
+set path_msys2=%Disk%:\msys64\mingw64\bin;
+set path_git=%Disk%:\portablegit\bin;
+set path_tcc=%Disk%:\tcc;
+
+path=%Disk%:;%path_python%;%path_msys2%;%path_git%;%path_tcc%;
+
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+
+start /MIN %Disk%:\wscite432\wscite\SciTE.exe
+start /MIN %Disk%:\wscite432\wscite\SciTE.exe
+
+Exit</pre>
+<p>stop.bat</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+path=%PATH%;
+
+taskkill /IM python.exe /F
+taskkill /IM pythonw.exe /F
+taskkill /IM scite.exe /F
+
+REM 終止虛擬硬碟與目錄的對應
+subst %Disk%: /D
+REM 關閉 cmd 指令視窗
+taskkill /IM cmd.exe /F
+
+EXIT</pre>
+<p>詳細流程在<a href="https://s40723150.github.io/cd2020/content/W2.html">W2</a>頁面</p>
+<p>基礎可攜系統<a href="https://drive.google.com/file/d/15b_VXiaXYLqaMuMAvAeZKegX4eSkiU70/view">下載<br/></a><a href="https://drive.google.com/open?id=1Ghi3rTB-HIZEn49PWgfOap7aha2UZvK9">有配置Webots<br/></a><a href="https://drive.google.com/open?id=1TN1NWb0rj675Ld-mb4QRNn-0ECRb2eZG">有配置Webots+</a><span><a href="https://drive.google.com/open?id=1TN1NWb0rj675Ld-mb4QRNn-0ECRb2eZG">CoppeliaSim</a>(</span>CoppeliaSim V4.0.0<span>，含</span><span>xelatex)<br/>P.S. 可以下載可攜系統的leo都已經升級到6.2.1版本了</span></p><br />可攜系統 << <a href='可攜系統.html'>Previous</a> <a href='pip.html'>Next</a> >> pip</div>
         
     <!-- footer -->
       <div class="container">
