@@ -166,7 +166,7 @@ EXIT</pre>
 <p><span><span>W5：<br/>將 CoppeliaSim 放到可攜系統上。將 Leo 升級到6.2.1。<br/></span></span></p>
 <p><span><span>W6：<br/>協助同組同學完成OBS的設定及解決顯示器擷取的問題。</span></span></p>
 <p><span><span>W7：<br/>整理分組和個人網頁內容。整理電子書重點。</span></span></p>
-<h2>W2</h2>
+<p><span><span>W10：<br/>將亂數分組的程式放到 web site，啟用Google API。</span></span></p><h2>W2</h2>
 <p>先創可攜系統的目錄 <span>”CD2020” </span>，在 <span>CD2020 </span>的目錄下新增 <span>”data”</span>。</p>
 <p>Python 3.8.2<br/>到 <span><a href="https://www.python.org/downloads/release/python-382/">https://www.python.org/downloads/release/python-382/</a> </span>搜尋<span>”Windows x86-64 executable installer”</span>並下載<span>”Windows x86-64 executable installer”</span>，下載完後，執行<span>python-3.8.2-amd64.exe</span></p>
 <p style="text-align: left;"><img alt="" height="244" src="/images/python_customize_install.png" width="400"/><br/><span>選Customize installation<br/><img alt="" height="246" src="/images/python_CI_pip_uncheck.png" width="400"/><br/>取消選取pip選項，Next<br/><img alt="" height="243" src="/images/python_CI_advamcedoption.png" width="400"/><br/>Install<br/>等它安裝完成<br/><img alt="" height="243" src="/images/python_setup_successful.png" width="400"/><br/>Close<br/></span><span>到剛剛安裝對應的目錄下去複製檔案<br/></span><img alt="" height="215" src="/images/python_files.png" width="400"/><br/>再先前創立的data目錄底下新增”py382”的目錄，再把複製到的檔案放到py382目錄裡</p>
@@ -298,7 +298,29 @@ Horizontal Flip \scalebox{-1}[1]{台灣 Taiwan.}
 <p>更新個人倉儲的內容，讓<span>內</span><span>容比較有重點。在reveal內加入2~7週的記錄內容及xelatex得配置說明。</span></p>
 <p>進度回報</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ge1eRLCqVtw" width="560"></iframe></p>
-<p><br/><br/><span>S</span><span>ervice</span></p>
+<h2>W10</h2>
+<p>將亂數分組程式</p><h1>CMS</h1>
+<p><span>使用Google + Domain API為@ gm.nfu.edu.tw用戶設置登錄名</span></p>
+<p><a href="https://console.developers.google.com/"><span><span>https://console.developers.google.com</span></span></a></p>
+<p><span><span>設置</span></span><span _ngcontent-lcy-c83="" class="cfc-table-title ng-star-inserted" id="cfc-table-caption-14" role="presentation"><span><span>OAuth 2.0客戶端ID</span></span></span></p>
+<p><span><span>使用</span></span><a href="https://github.com/authomatic/authomatic"><span><span>https://github.com/authomatic/authomatic</span></span></a><span><span>允許用戶使用Google或Github帳戶登錄。</span></span></p>
+<h4><span><span>獲取您的oauth_gm.txt文件內容：</span></span></h4>
+<ol>
+<li><span><span>登錄到您的@gm帳戶</span></span></li>
+<li><span><span>到</span></span><a href="https://console.developers.google.com/"><span><span>https://console.developers.google.com</span></span></a></li>
+<li><span><span>接受許可並創建Google API項目</span></span></li>
+<li><span><span>啟用Google +Domain API</span></span></li>
+<li><span><span>在Google + Domain API憑證下，按CONFIGURE CONSENT SCREEN按鈕</span></span></li>
+<li><span><span>選擇內部或外部用戶類型並添加新的應用程序名稱</span></span></li>
+<li><span><span>在“ API和服務”下，進入“憑證”頁面</span></span></li>
+<li><span><span _ngcontent-ith-c126="" class="cfc-table-title ng-star-inserted" id="cfc-table-caption-1" role="presentation"><span>為Web應用程序</span></span><span>創建“<span> </span></span></span><span _ngcontent-ith-c126="" class="cfc-table-title ng-star-inserted" id="cfc-table-caption-1" role="presentation"><span><span>OAuth 2.0客戶端ID”類型的憑據</span></span></span></li>
+<li><span><span>授權的JavaScript來源：</span></span><a href="https://localhost:8443/"><span><span>https://localhost:8443</span></span></a></li>
+<li><span><span>授權的重定向URI：</span></span><a href="https://localhost:8443/login/google/"><span><span>https://localhost:8443/login/google/</span></span></a></li>
+<li><span><span>將自己的的客戶ID和客戶密碼保存到oauth_gm.txt中</span></span></li>
+</ol>
+<p><span><span>安裝Authomatic imutils opencv-python</span></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install Authomatic imutils opencv-python</pre>
+<p><span><span><br/><br/></span></span></p><h1>Service</h1>
 <h4>每組隨機抽選:</h4>
 <p>學員名單 URL:</p>
 <select id="RstudListUrl">
