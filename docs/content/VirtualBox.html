@@ -154,41 +154,13 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W3 << <a href='W3.html'>Previous</a> <a href='W7.html'>Next</a> >> W7<br /><h1>W4 W5</h1>
-<p>xelatex：<br/>到 <a href="https://miktex.org/download">https://miktex.org/download</a> 下載，載下來的檔案重新命名為 <span>miktex-portable.exe ，再執行安裝。在 start.bat 納入 Y:\miktex-portable\texmfs\install\miktex\bin\x64 搜尋路徑，開啟隨身系統後，確定可以執行 xelatex。</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">set path_xelatex=%Disk%:\miktex-portable\texmfs\install\miktex\bin\x64;</pre>
-<p><span></span><span>將下列 LaTeX 存為 article.tex</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">% UTF-8 encoding
-% Compile with latex+dvipdfmx, pdflatex, xelatex or lualatex
-% XeLaTeX is recommanded
-\documentclass{article}
-\usepackage{xeCJK}
-\setCJKmainfont{SimSun}
-\begin{document}
-\LaTeX 文章内容。
-\end{document}</pre>
-<p><span>利用</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">xelatex article.tex</pre>
-<p>再測試</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">\documentclass[]{article}
-
-\usepackage{graphicx}
-\usepackage{xeCJK}
-\setCJKmainfont{SimSun}
-
-\begin{document}
-
-90 degree rotation \rotatebox[origin=c]{90}{MDE 機械設計.}
-
-Vertical Flip \scalebox{1}[-1]{NFU 虎尾科大.}
-
-Horizontal Flip \scalebox{-1}[1]{台灣 Taiwan.}
-
-\end{document}</pre>
-<p></p>
-<p></p>
-<p>CoppeliaSim：<br/>下載 <a href="https://www.coppeliarobotics.com/files/CoppeliaSim_Edu_V4_0_0_Win.zip">CoppeliaSim Edu, Binaries</a>的版本，把資料放到可攜系統下</p>
-<br />W3 << <a href='W3.html'>Previous</a> <a href='W7.html'>Next</a> >> W7</div>
+    <div id="tipue_search_content">CMS << <a href='CMS.html'>Previous</a> <a href='Service.html'>Next</a> >> Service<br /><h1>VirtualBox</h1>
+<h4>Setting VirtualBox Network</h4>
+<p>在VirtualBox→Files→Preferences<span>→Network<br/>新增一個網路設定，支援DHCP和IPV6</span></p>
+<p><img alt="" height="271" src="./../images/VirtualBox_Preference.png" width="450"/></p>
+<p>再到cd2020pj1的虛擬主機設定NAT的Port號</p>
+<p><img alt="" height="265" src="./../images/VirtualBox_server_nat_setting.png" width="450"/></p>
+<p>啟動cd2020pj1虛擬主機<br/>執行wsgi.py<br/>嘗試從外面連進虛擬主機</p><br />CMS << <a href='CMS.html'>Previous</a> <a href='Service.html'>Next</a> >> Service</div>
         
     <!-- footer -->
       <div class="container">

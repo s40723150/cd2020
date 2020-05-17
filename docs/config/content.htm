@@ -323,7 +323,13 @@ Horizontal Flip \scalebox{-1}[1]{台灣 Taiwan.}
 </ol>
 <p><span><span>安裝Authomatic imutils opencv-python</span></span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install Authomatic imutils opencv-python</pre>
-<p><span><span><br/><br/></span></span></p><h1>Service</h1>
+<h2>VirtualBox</h2>
+<h4>Setting VirtualBox Network</h4>
+<p>在VirtualBox→Files→Preferences<span>→Network<br/>新增一個網路設定，支援DHCP和IPV6</span></p>
+<p><img alt="" height="271" src="/images/VirtualBox_Preference.png" width="450"/></p>
+<p>再到cd2020pj1的虛擬主機設定NAT的Port號</p>
+<p><img alt="" height="265" src="/images/VirtualBox_server_nat_setting.png" width="450"/></p>
+<p>啟動cd2020pj1虛擬主機<br/>執行wsgi.py<br/>嘗試從外面連進虛擬主機</p><h1>Service</h1>
 <h4>每組隨機抽選:</h4>
 <p>學員名單 URL:</p>
 <select id="RstudListUrl">
