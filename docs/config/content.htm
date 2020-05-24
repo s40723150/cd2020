@@ -321,15 +321,52 @@ Horizontal Flip \scalebox{-1}[1]{台灣 Taiwan.}
 <li><span><span>授權的重定向URI：</span></span><a href="https://localhost:8443/login/google/"><span><span>https://localhost:8443/login/google/</span></span></a></li>
 <li><span><span>將自己的的客戶ID和客戶密碼保存到oauth_gm.txt中</span></span></li>
 </ol>
+<p><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ijcS1EuAbjE" width="560"></iframe></span></span></p>
 <p><span><span>安裝Authomatic imutils opencv-python</span></span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install Authomatic imutils opencv-python</pre>
-<h2>VirtualBox</h2>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install Authomatic imutils opencv-python</pre><h2>VirtualBox</h2>
 <h4>Setting VirtualBox Network</h4>
 <p>在VirtualBox→Files→Preferences<span>→Network<br/>新增一個網路設定，支援DHCP和IPV6</span></p>
 <p><img alt="" height="271" src="/images/VirtualBox_Preference.png" width="450"/></p>
 <p>再到cd2020pj1的虛擬主機設定NAT的Port號</p>
-<p><img alt="" height="265" src="/images/VirtualBox_server_nat_setting.png" width="450"/></p>
-<p>啟動cd2020pj1虛擬主機<br/>執行wsgi.py<br/>嘗試從外面連進虛擬主機</p><h1>Service</h1>
+<p>IPv4設定：Guest IP是透過ifconfig查出來(IPv6的也是)</p>
+<p><img alt="" height="298" src="/images/VirtualBox_IPv4.png" width="450"/></p>
+<p><span>IPv6設定</span></p>
+<p><span><img alt="" height="298" src="/images/VirtualBox_IPv6.png" width="450"/></span></p>
+<p><span>Ubuntu 20.04的網路設定</span></p>
+<p><span><img caption="false" height="294" src="/images/VirtualBox_Netsetting.png" width="500"/></span></p>
+<p><span>P.S.  Guest IP 的部分可以在虛擬主機開機的狀態下進行修改設定</span></p>
+<p><span>IP 查詢</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p>若跳出尚未安裝net-tools的話請安裝</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p>若在<strong>IPv6</strong>環境下有跳出網路錯誤</p>
+<ol>
+<li>IPv6環境設定是否正確<br/><br/><span>請到 /etc/netplan 目錄下檢查 00-install-config.yaml 檔案內的設定</span><span></span><span><span><br/></span></span>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/netplan
+sudo vi 00-install-config.yaml</pre>
+<span>00-install-config.yaml</span>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># This is the network config written by 'subiquity'
+network:
+	ethernets:
+		enpes3:
+			dhcp4: true
+			dhcp6: true
+			nameservers:
+				addresses:
+					- 2001:b000:168::1
+	version: 2</pre>
+<span><br/></span></li>
+<li>proxy問題<br/>請到 /etc/apt/apt.conf.d 目錄下檢查是否有proxy.conf檔案，若沒有，請用新增(直接用vi編輯器開啟proxy.conf就會自動新增)<br/>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/apt/apt.conf.d
+sudo vi proxy.conf</pre>
+<p>proxy.conf的檔案內容</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">Acquire::http::proxy "http://[2001:288:6004:17::填port號]";</pre>
+<br/>先增完內容後要更新apt<br/>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
+<br/><br/></li>
+</ol>
+<p>啟動cd2020pj1虛擬主機<br/>執行wsgi.py<br/>嘗試從外面連進虛擬主機</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZoKaG6D-Rgc" width="560"></iframe></p><h1>Service</h1>
 <h4>每組隨機抽選:</h4>
 <p>學員名單 URL:</p>
 <select id="RstudListUrl">
