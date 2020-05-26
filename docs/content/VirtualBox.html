@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='可攜系統.html'>可攜系統</a><ul class='dropdown'><li><a href='配置系統.html'>配置系統</a><li><a href='pip.html'>pip</a><li><a href='SSH.html'>SSH</a><li><a href='Q&A.html'>Q&A</a></li></ul><li class='has-children'><a href='紀錄.html'>紀錄</a><ul class='dropdown'><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4 W5.html'>W4 W5</a><li><a href='W7.html'>W7</a><li><a href='W10.html'>W10</a></li></ul><li class='has-children'><a href='CMS.html'>CMS</a><ul class='dropdown'><li><a href='VirtualBox.html'>VirtualBox</a></li></ul><li><a href='Service.html'>Service</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='可攜系統.html'>可攜系統</a><ul class='dropdown'><li><a href='配置系統.html'>配置系統</a><li><a href='pip.html'>pip</a><li><a href='SSH.html'>SSH</a><li><a href='Q&A.html'>Q&A</a></li></ul><li class='has-children'><a href='紀錄.html'>紀錄</a><ul class='dropdown'><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4 W5.html'>W4 W5</a><li><a href='W7.html'>W7</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a></li></ul><li class='has-children'><a href='CMS.html'>CMS</a><ul class='dropdown'><li><a href='VirtualBox.html'>VirtualBox</a></li></ul><li><a href='Service.html'>Service</a></li>
                       </ul>
                 </nav>
               </div>
@@ -186,7 +186,10 @@ network:
 				addresses:
 					- 2001:b000:168::1
 	version: 2</pre>
-<span><br/></span></li>
+<p>編輯完成後:wq跳出編輯並儲存，並更新netplan設定</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo netplan apply</pre>
+<p></p>
+</li>
 <li>proxy問題<br/>請到 /etc/apt/apt.conf.d 目錄下檢查是否有proxy.conf檔案，若沒有，請用新增(直接用vi編輯器開啟proxy.conf就會自動新增)<br/>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/apt/apt.conf.d
 sudo vi proxy.conf</pre>
@@ -194,9 +197,36 @@ sudo vi proxy.conf</pre>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">Acquire::http::proxy "http://[2001:288:6004:17::填port號]";</pre>
 <br/>先增完內容後要更新apt<br/>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
-<br/><br/></li>
+</li>
 </ol>
-<p>啟動cd2020pj1虛擬主機<br/>執行wsgi.py<br/>嘗試從外面連進虛擬主機</p>
+<p>網路設定完成後可以啟動wsgi.py</p>
+<p>再用電腦上的網頁(不是虛擬主機的網頁)到 <a href="https://localhost:8443/看是否成功連上，如果成功連上後就換putty">https://localhost:8443/看是否成功連上，如果成功連上後就換putty</a></p>
+<h4>Putty設定</h4>
+<p>IPv4</p>
+<p>Host Name：localhost<br/>Port：22<br/>Connection type：SSH</p>
+<p><img alt="" height="449" src="./../images/putty_IPv4.png" width="450"/></p>
+<p>IPv6</p>
+<p><strong></strong><span>Host Name：::1</span><br/><span>Port：22</span><br/><span>Connection type：SSH</span></p>
+<p><img alt="" height="449" src="./../images/putty_IPv6.png" width="450"/></p>
+<p>X11(IPv4或IPv6設定都一樣)</p>
+<p>▣Enable X11 forwarding</p>
+<p>X display location：localhost:0.0</p>
+<p><img alt="" height="449" src="./../images/putty_X11.png" width="450"/></p>
+<h4>Xming</h4>
+<p>安裝<a href="https://sourceforge.net/projects/xming/files/latest/download">Xming</a></p>
+<p>直接安裝後搬移至可攜</p>
+<p>或是直接安裝在隨身碟成可攜</p>
+<p><img alt="" height="356" src="./../images/Xming.png" width="450"/></p>
+<p>安裝完成後執行XLaunch.exe，全部為預設設定。</p>
+<p>在putty執行xtrem看是否會成功跳出</p>
+<h4>File Manager</h4>
+<p>執行nautilus若無法執行，請安裝nautilus</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install nautilus</pre>
+<p>安裝完成後再執行一次<span>nautilus，正常的話就會跳出FileManager</span></p>
+<h4><span>CoppeliaSim</span></h4>
+<p><span>到coppeilasim的目錄下開啟coppeilaSim.sh的檔案</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">./coppeilaSim.sh</pre>
+<p>之後就會開啟CoppeilaSim了</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZoKaG6D-Rgc" width="560"></iframe></p><br />CMS << <a href='CMS.html'>Previous</a> <a href='Service.html'>Next</a> >> Service</div>
         
     <!-- footer -->
