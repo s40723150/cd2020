@@ -347,10 +347,10 @@ Horizontal Flip \scalebox{-1}[1]{台灣 Taiwan.}
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
 <p>若在<strong>IPv6</strong>環境下有跳出網路錯誤</p>
 <ol>
-<li>IPv6環境設定是否正確<br/><br/><span>請到 /etc/netplan 目錄下檢查 00-install-config.yaml 檔案內的設定</span><span></span><span><span><br/></span></span>
+<li>IPv6環境設定是否正確<br/><br/><span>請到 /etc/netplan 目錄下檢查 00-installer-config.yaml 檔案內的設定</span><span></span><span><span><br/></span></span>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/netplan
-sudo vi 00-install-config.yaml</pre>
-<span>00-install-config.yaml</span>
+sudo vi 00-installer-config.yaml</pre>
+<span>00-installer-config.yaml</span>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># This is the network config written by 'subiquity'
 network:
 	ethernets:
@@ -369,7 +369,7 @@ network:
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /etc/apt/apt.conf.d
 sudo vi proxy.conf</pre>
 <p>proxy.conf的檔案內容</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">Acquire::http::proxy "http://[2001:288:6004:17::填port號]";</pre>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";</pre>
 <br/>先增完內容後要更新apt<br/>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
 </li>
@@ -399,8 +399,8 @@ sudo vi proxy.conf</pre>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install nautilus</pre>
 <p>安裝完成後再執行一次<span>nautilus，正常的話就會跳出FileManager</span></p>
 <h4><span>CoppeliaSim</span></h4>
-<p><span>到coppeilasim的目錄下開啟coppeilaSim.sh的檔案</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">./coppeilaSim.sh</pre>
+<p><span>到coppeliasim的目錄下開啟coppeliaSim.sh的檔案</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">./coppeliaSim.sh</pre>
 <p>之後就會開啟CoppeilaSim了</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZoKaG6D-Rgc" width="560"></iframe></p><h1>Service</h1>
 <h4>每組隨機抽選:</h4>
