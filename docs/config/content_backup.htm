@@ -376,7 +376,7 @@ sudo vi proxy.conf</pre>
 </ol>
 <p>網路設定完成後可以啟動wsgi.py</p>
 <p>再用電腦上的網頁(不是虛擬主機的網頁)到 <a href="https://localhost:8443/看是否成功連上，如果成功連上後就換putty">https://localhost:8443/看是否成功連上，如果成功連上後就換putty</a></p>
-<p>Putty設定</p>
+<h4>Putty設定</h4>
 <p>IPv4</p>
 <p>Host Name：localhost<br/>Port：22<br/>Connection type：SSH</p>
 <p><img alt="" height="449" src="/images/putty_IPv4.png" width="450"/></p>
@@ -387,13 +387,21 @@ sudo vi proxy.conf</pre>
 <p>▣Enable X11 forwarding</p>
 <p>X display location：localhost:0.0</p>
 <p><img alt="" height="449" src="/images/putty_X11.png" width="450"/></p>
+<h4>Xming</h4>
 <p>安裝<a href="https://sourceforge.net/projects/xming/files/latest/download">Xming</a></p>
 <p>直接安裝後搬移至可攜</p>
 <p>或是直接安裝在隨身碟成可攜</p>
 <p><img alt="" height="356" src="/images/Xming.png" width="450"/></p>
 <p>安裝完成後執行XLaunch.exe，全部為預設設定。</p>
-<p></p>
-<p>啟動cd2020pj1虛擬主機<br/>執行wsgi.py<br/>嘗試從外面連進虛擬主機</p>
+<p>在putty執行xtrem看是否會成功跳出</p>
+<h4>File Manager</h4>
+<p>執行nautilus若無法執行，請安裝nautilus</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install nautilus</pre>
+<p>安裝完成後再執行一次<span>nautilus，正常的話就會跳出FileManager</span></p>
+<h4><span>CoppeliaSim</span></h4>
+<p><span>到coppeilasim的目錄下開啟coppeilaSim.sh的檔案</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">./coppeilaSim.sh</pre>
+<p>之後就會開啟CoppeilaSim了</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZoKaG6D-Rgc" width="560"></iframe></p><h1>Service</h1>
 <h4>每組隨機抽選:</h4>
 <p>學員名單 URL:</p>
