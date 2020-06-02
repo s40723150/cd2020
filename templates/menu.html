@@ -1,14 +1,11 @@
-{# menu.html #}
-{% extends "base.html" %}
+## menu.html
+<%inherit file="base.html"/>
 
-{% block body %}
+<%block name="header">
+    <!-- this is some header content -->
+</%block>
 
-    <a href="/index">Home</a><br />
-    
-    {# for loop to list menu #}
-    {% for i in menuList %}
-        <a href=" {{ i }} ">{{ i }}</a>
-        <br />
-    {% endfor %}
+        % for i in menuList:
+            <a href='/${i}'> ${i}</a><br />
+        % endfor
 
-{% endblock body %}
