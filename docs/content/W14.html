@@ -154,16 +154,30 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">虛擬主機 Q&A << <a href='虛擬主機 Q&A.html'>Previous</a> <br /><h1>Service</h1>
-<h4>每組隨機抽選:</h4>
-<p>學員名單 URL:</p>
-<select id="RstudListUrl">
-<option selected="selected" value="https://mde.tw/cd2020/downloads/2a_group_list.txt">2a</option>
-<option value="https://mde.tw/cd2020/downloads/2b_group_list.txt">2b</option>
-</select>
-<p><br/> 每組抽選人數: <input id="RnumOfStud" size="2" type="text" value="1"/><br/> <input id="Rsubmit" type="submit" value="開始"/><br/> <textarea cols="80" id="Routput" rows="10"></textarea></p>
-<script src="https://s40723150.github.io/cd2020/downloads/random_select.js"></script>
-<p></p><br />虛擬主機 Q&A << <a href='虛擬主機 Q&A.html'>Previous</a> </div>
+    <div id="tipue_search_content">W12 << <a href='W12.html'>Previous</a> <a href='CMS.html'>Next</a> >> CMS<br /><h1>W14</h1>
+<p>配置IPv6在指定網路位置外部連線</p>
+<p></p>
+<p>每個人依照學號分配到一個IPv6的網路位置</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">2001:288:6004:17:2020:1::7101/64
+
+2001:288:6006:17 為機械設計系網段
+                            2020 為年份
+                            1 為 cda, 2 為 cdb, 3 為 wcm, 4 為 wcmj
+                            71 為 407231 表示甲班, 72 為乙班
+                            01 則為該班學號</pre>
+<p>所以我被分配到的網路位置是2001:288:6004:17:2020:1::7150</p>
+<p><img alt="" height="411" src="./../images/7150_IPv6_address.png" width="500"/></p>
+<p>防火牆和proxy要記得關掉</p>
+<p>如果還是不行正常執行</p>
+<p>可以依照下列順去排除問題</p>
+<ol>
+<li>檢查虛擬主機網路是否正常運作</li>
+<li>在虛擬主機上是否可以成功連上wsgi.py</li>
+<li>外部是否可以成功連上</li>
+</ol>
+<p>若在第一項遇到問題就要去檢查網路設定是否正確</p>
+<p>第二項就要確認ifconfig查到的IP是否fd開頭，wsgi.py的ID是否為查到的IP，網址是[IPv6的ID]:啟動的Port號</p>
+<p>第三項要確認網卡的IPv6設定是否正確，防火牆和proxy是否關閉，網址的Port號是否與設定的相同，若分配到的網路位置連不到可先換成::1看是否連的上</p><br />W12 << <a href='W12.html'>Previous</a> <a href='CMS.html'>Next</a> >> CMS</div>
         
     <!-- footer -->
       <div class="container">
