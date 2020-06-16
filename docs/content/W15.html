@@ -154,22 +154,23 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">配置系統 << <a href='配置系統.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH<br /><h1>pip</h1>
-<h4><strong></strong>安裝pip</h4>
-<p>到<a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a>頁面，滑鼠右鍵另存新檔到CD2020/data執行</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python get-pip.py</pre>
-<p><img alt="" height="134" src="./../images/python_get-pip.png" width="450"/></p>
-<p></p>
-<h4>安裝 CMSiMDE 所需模組</h4>
-<p><span>利用 pip 安裝 flask, bs4, lxml, pelican, markdown, flask_cors, leo (可單獨安裝區少的模組)</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install flask bs4 lxml pelican markdown flask_cors leo</pre>
-<h4>重新安裝Leo</h4>
-<p>解除安裝現有Leo(6.1版本)</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip uninstall leo</pre>
-<p>安裝Leo 6.2.1版本</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install leo==6.2.1</pre>
-<p></p>
-<br />配置系統 << <a href='配置系統.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH</div>
+    <div id="tipue_search_content">W14 << <a href='W14.html'>Previous</a> <a href='CMS.html'>Next</a> >> CMS<br /><h1>W15</h1>
+<p>成功讓外部主機連上</p>
+<p>由於是在學校的共用電腦所以先確認虛擬主機的網路設定，確認ifconfig查到的ID和設定的相同，IPv6的host ID是否是自己被分配到的ID</p>
+<p>確認無誤後，再執行wsgi.py，在虛擬主機測試，但在開啟時缺少pydrive，所以補裝上</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip3 install pydrive</pre>
+<p>然後在開啟時網頁還是出現錯誤，所以我去更新mako，先到mako模組的目錄下移除mako，再安裝mako 1.1.3 版本</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /usr/lib/python3/dist-packages
+sudo re -r mako
+sudo pip3 install mako==1.1.3</pre>
+<p>之後wsgi.py開啟後就正常了</p>
+<p>接下來就測試外面的主機是否可以正常連上</p>
+<p>先到網路卡設定</p>
+<p><img alt="" height="561" src="./../images/網卡設定.gif" width="700"/></p>
+<p>設定好把proxy和防火牆關閉</p>
+<p>再用瀏覽器連到https://[2001:288:6004:17:2020:1:0:7150]:17443</p>
+<p>成功連線</p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="//www.youtube.com/embed/qjDV7TY21-g" width="560"></iframe></p><br />W14 << <a href='W14.html'>Previous</a> <a href='CMS.html'>Next</a> >> CMS</div>
         
     <!-- footer -->
       <div class="container">
