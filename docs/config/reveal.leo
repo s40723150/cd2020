@@ -40,6 +40,27 @@
 <v t="leo.20200419222642.1"><vh>W7</vh>
 <v t="leo.20200419222642.2"><vh>W7 content</vh></v>
 </v>
+<v t="leo.20200623212144.1"><vh>W10</vh>
+<v t="leo.20200623212144.2"><vh>W10 content</vh></v>
+</v>
+<v t="leo.20200623221711.1"><vh>W11</vh>
+<v t="leo.20200623221711.2"><vh>W11 content</vh></v>
+</v>
+<v t="leo.20200623222437.1"><vh>W12-1</vh>
+<v t="leo.20200623222437.2"><vh>W12 content</vh></v>
+</v>
+<v t="leo.20200623222855.1"><vh>W12-2</vh>
+<v t="leo.20200623222855.2"><vh>W12 content</vh></v>
+</v>
+<v t="leo.20200623223236.1"><vh>W14</vh>
+<v t="leo.20200623223236.2"><vh>W14 content</vh></v>
+</v>
+<v t="leo.20200623223515.1"><vh>W15</vh>
+<v t="leo.20200623223515.2"><vh>W15 content</vh></v>
+</v>
+<v t="leo.20200623223643.1"><vh>W16</vh>
+<v t="leo.20200623223643.2"><vh>W16 content</vh></v>
+</v>
 </v>
 <v t="leo.20180902120523.11"><vh>可攜系統</vh>
 <v t="leo.20180902120523.12"><vh>可攜系統配置</vh></v>
@@ -728,5 +749,86 @@ Leo Editor 和 Flutter 放入可攜系統
 * 整理電子書重點
 
 * 解決OBS和Youtube Live stream時畫面模糊還有聲音太小聲的問題</t>
+<t tx="leo.20200623212144.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200623212144.2"> ## W10
+將亂數分組程式放到網頁上當作服務
+
+利用AJAX的特性，讀取選項的資料
+送出表單後再利用script執行亂數分組的程式
+
+啟用Google + Domain API
+
+設定OAuth 2.0客戶端ID</t>
+<t tx="leo.20200623221711.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200623221711.2"> ## W11
+ 
+設定8443的port號可以從電腦網頁連進去Ubuntu 20.04所啟動的wsgi.py</t>
+<t tx="leo.20200623222437.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200623222437.2"> ## W12
+ 設定Oauth2和Google API
+
+&lt;iframe width="556" height="310" src="https://www.youtube.com/embed/ijcS1EuAbjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200623222855.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200623222855.2"> ## W12
+
+設定IPv4網路環境下的網路設定，並讓putty操控Ubuntu20.04
+
+&lt;iframe width="556" height="310" src="https://www.youtube.com/embed/ZoKaG6D-Rgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200623223236.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200623223236.2"> ## W14
+
+配置IPv6在指定網路位置外部連線
+
+每個人依照學號分配到一個IPv6的網路位置
+```
+2001:288:6004:17:2020:1::7101/64
+ 
+2001:288:6006:17 為機械設計系網段
+                            2020 為年份
+                            1 為 cda, 2 為 cdb, 3 為 wcm, 4 為 wcmj
+                            71 為 407231 表示甲班, 72 為乙班
+                            01 則為該班學號
+```</t>
+<t tx="leo.20200623223515.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200623223515.2"> ## W15
+排除第14週IPv6的設定問題</t>
+<t tx="leo.20200623223643.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200623223643.2"> ## W16
+解決cd2020pj1上傳ttt檔的問題</t>
 </tnodes>
 </leo_file>
