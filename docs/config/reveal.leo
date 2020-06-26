@@ -121,6 +121,23 @@
 <v t="leo.20200419220552.2"><vh>how to test2</vh></v>
 </v>
 </v>
+<v t="leo.20200625180208.1"><vh>CMS</vh>
+<v t="leo.20200625180208.2"><vh>CMS</vh>
+<v t="leo.20200625180208.3"><vh>enable Google API</vh></v>
+</v>
+<v t="leo.20200625180208.4"><vh>oauth2 clilent account &amp; ID 1</vh>
+<v t="leo.20200625180208.5"><vh>how to get oauth_gm.txt 1</vh></v>
+</v>
+<v t="leo.20200625180208.6"><vh>oauth2 clilent account &amp; ID 2</vh>
+<v t="leo.20200625180208.7"><vh>how to get oauth_gm.txt 2</vh></v>
+</v>
+<v t="leo.20200625180208.8"><vh>install module</vh>
+<v t="leo.20200625180208.9"><vh>how to test2</vh></v>
+</v>
+<v t="leo.20200626113302.1"><vh>Latex P4</vh>
+<v t="leo.20200626113302.2"><vh>how to test2</vh></v>
+</v>
+</v>
 <v t="leo.20200419213552.1"><vh>各式內容引用範例</vh>
 <v t="leo.20200419213552.2"><vh>導入數學符號與方程式</vh>
 <v t="leo.20200419213552.3"><vh>LaTeX 格式方程式</vh></v>
@@ -186,10 +203,9 @@ Created by [40723150](https://s40723150.github.io/cd2020/)
 
 						
 </t>
-<t tx="leo.20180902120523.15"># Python 3.8.2
+<t tx="leo.20180902120523.15">## Python 3.8.2
 
 [下載Python3.8.2](https://www.python.org/downloads/release/python-382/) 的Windows x86-64 executable installer版本，下載完後，執行安裝
-
 &lt;img src="./../images/python_customize_install.png" width="450" &gt;&lt;/iframe&gt;
 
 選Customize installation</t>
@@ -830,5 +846,76 @@ Leo Editor 和 Flutter 放入可攜系統
 &lt;/section&gt;</t>
 <t tx="leo.20200623223643.2"> ## W16
 解決cd2020pj1上傳ttt檔的問題</t>
+<t tx="leo.20200625180208.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20200625180208.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200625180208.3"> ## CMS
+ ### 啟用API
+ 
+ * 啟用Google + Domain API [developers]
+ 
+ * 用@ gm.nfu.edu.tw用戶設置登錄名
+ 
+ [developers]: https://console.developers.google.com
+</t>
+<t tx="leo.20200625180208.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200625180208.5"> ## 獲取oauth_gm.txt
+1. 登錄到您的@gm帳戶
+2. 到[console developers]
+3. 接受許可並創建Google API項目
+4. 啟用Google +Domain API
+5. 在Google + Domain API憑證下，按CONFIGURE CONSENT SCREEN按鈕
+
+[console developers]: https://console.developers.google.com
+</t>
+<t tx="leo.20200625180208.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200625180208.7"> ## 獲取oauth_gm.txt 
+ 
+ ### 憑證設定
+ 
+6. 選擇內部添加新的應用程序名稱
+7. “ API和服務”→“憑證”
+8. “ OAuth 2.0客戶端ID”為Web應用程序創建
+9. 授權的JavaScript來源：` https://localhost:8443 `
+10. 授權的重定向URI：` https://localhost:8443/login/google/ `
+11. 將自己的的客戶ID和密碼保存到oauth_gm.txt中</t>
+<t tx="leo.20200625180208.8">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200625180208.9"> ## 安裝
+Authomatic imutils opencv-python
+```
+pip install Authomatic imutils opencv-python
+
+```
+</t>
+<t tx="leo.20200626113302.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626113302.2"> ## Youtube
+&lt;iframe width="1263" height="480" src="https://www.youtube.com/embed/ijcS1EuAbjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
