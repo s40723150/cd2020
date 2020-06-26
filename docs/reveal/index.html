@@ -487,6 +487,109 @@ pip install Authomatic imutils opencv-python
     </script>
 </section>
 </section>
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## VirtualBox
+ 
+ * 網路設定
+ 
+ * 連線設定
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## 網路設定
+ 
+### IPv4
+
+* 安裝 net-tools 
+```
+sudo apt install net-tools
+```
+* ``ifconfig`` 查詢 client ID
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## 網路設定
+ 
+### IPv6(有proxy)
+
+先設定DHCP
+
+```
+cd /etc/netplan
+sudo vi 00-installer-config.yaml
+```
+設定好後，更新網路設定
+```
+sudo netplan apply
+```
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## 網路設定
+ 
+### IPv6(有proxy)
+
+  00-installer-config.yaml 的內容
+  
+```
+# This is the network config written by 'subiquity'
+network:
+    ethernets:
+        enpes3:
+            dhcp4: true
+            dhcp6: true
+            nameservers:
+                addresses:
+                    - 2001:b000:168::1
+    version: 2
+```
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## 網路設定
+ 
+### IPv6(有proxy)
+先設定 proxy
+
+```
+cd /etc/apt/apt.conf.d
+sudo vi proxy.conf
+```
+    
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 網路設定
+ 
+### IPv6(有proxy)
+
+proxy.conf 的內容
+```
+Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";
+```
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+ ## Youtube
+<iframe width="1263" height="480" src="https://www.youtube.com/embed/ijcS1EuAbjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </script>
+</section>
+</section>
 <!--
 <section>
 <!--

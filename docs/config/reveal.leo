@@ -134,8 +134,31 @@
 <v t="leo.20200625180208.8"><vh>install module</vh>
 <v t="leo.20200625180208.9"><vh>how to test2</vh></v>
 </v>
-<v t="leo.20200626113302.1"><vh>Latex P4</vh>
-<v t="leo.20200626113302.2"><vh>how to test2</vh></v>
+<v t="leo.20200626113302.1"><vh>video</vh>
+<v t="leo.20200626113302.2"><vh>video</vh></v>
+</v>
+</v>
+<v t="leo.20200626142500.1"><vh>VirtualBox</vh>
+<v t="leo.20200626142500.2"><vh>VirtualBox</vh>
+<v t="leo.20200626142500.3"><vh>enable Google API</vh></v>
+</v>
+<v t="leo.20200626142500.4"><vh>network setting IPv4</vh>
+<v t="leo.20200626142500.5"><vh>setting IPv4</vh></v>
+</v>
+<v t="leo.20200626160744.1"><vh>network setting IPv6-1</vh>
+<v t="leo.20200626160744.2"><vh>setting IPv6</vh></v>
+</v>
+<v t="leo.20200626161439.1"><vh>network setting IPv6 DHCP</vh>
+<v t="leo.20200626161439.2"><vh>setting IPv6</vh></v>
+</v>
+<v t="leo.20200626161338.1"><vh>network setting IPv6-2</vh>
+<v t="leo.20200626161338.2"><vh>setting IPv6</vh></v>
+</v>
+<v t="leo.20200626161618.1"><vh>network setting IPv6 DHCP</vh>
+<v t="leo.20200626161618.2"><vh>setting IPv6</vh></v>
+</v>
+<v t="leo.20200626142500.10"><vh>video</vh>
+<v t="leo.20200626142500.11"><vh>video</vh></v>
 </v>
 </v>
 <v t="leo.20200419213552.1"><vh>各式內容引用範例</vh>
@@ -917,5 +940,119 @@ pip install Authomatic imutils opencv-python
 &lt;/section&gt;</t>
 <t tx="leo.20200626113302.2"> ## Youtube
 &lt;iframe width="1263" height="480" src="https://www.youtube.com/embed/ijcS1EuAbjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200626142500.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20200626142500.10">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626142500.11"> ## Youtube
+&lt;iframe width="1263" height="480" src="https://www.youtube.com/embed/ijcS1EuAbjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200626142500.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626142500.3"> ## VirtualBox
+ 
+ * 網路設定
+ 
+ * 連線設定
+</t>
+<t tx="leo.20200626142500.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626142500.5"> ## 網路設定
+ 
+### IPv4
+
+* 安裝 net-tools 
+```
+sudo apt install net-tools
+```
+* ``ifconfig`` 查詢 client ID
+</t>
+<t tx="leo.20200626160744.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626160744.2"> ## 網路設定
+ 
+### IPv6(有proxy)
+
+先設定DHCP
+
+```
+cd /etc/netplan
+sudo vi 00-installer-config.yaml
+```
+設定好後，更新網路設定
+```
+sudo netplan apply
+```</t>
+<t tx="leo.20200626161338.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626161338.2"> ## 網路設定
+ 
+### IPv6(有proxy)
+先設定 proxy
+
+```
+cd /etc/apt/apt.conf.d
+sudo vi proxy.conf
+```
+    </t>
+<t tx="leo.20200626161439.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626161439.2"> ## 網路設定
+ 
+### IPv6(有proxy)
+
+  00-installer-config.yaml 的內容
+  
+```
+# This is the network config written by 'subiquity'
+network:
+    ethernets:
+        enpes3:
+            dhcp4: true
+            dhcp6: true
+            nameservers:
+                addresses:
+                    - 2001:b000:168::1
+    version: 2
+```</t>
+<t tx="leo.20200626161618.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200626161618.2">## 網路設定
+ 
+### IPv6(有proxy)
+
+proxy.conf 的內容
+```
+Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";
+```</t>
 </tnodes>
 </leo_file>
