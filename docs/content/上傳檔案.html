@@ -154,29 +154,51 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W16 << <a href='W16.html'>Previous</a> <a href='VirtualBox.html'>Next</a> >> VirtualBox<br /><h1>CMS</h1>
-<p><span>使用Google + Domain API為@ gm.nfu.edu.tw用戶設置登錄名</span></p>
-<p><a href="https://console.developers.google.com/"><span><span>https://console.developers.google.com</span></span></a></p>
-<p><span><span>設置</span></span><span _ngcontent-lcy-c83="" class="cfc-table-title ng-star-inserted" id="cfc-table-caption-14" role="presentation"><span><span>OAuth 2.0客戶端ID</span></span></span></p>
-<p><span><span>使用</span></span><a href="https://github.com/authomatic/authomatic"><span><span>https://github.com/authomatic/authomatic</span></span></a><span><span>允許用戶使用Google或Github帳戶登錄。</span></span></p>
-<h4><span><span>獲取您的oauth_gm.txt文件內容：</span></span></h4>
-<ol>
-<li><span><span>登錄到您的@gm帳戶</span></span></li>
-<li><span><span>到</span></span><a href="https://console.developers.google.com/"><span><span>https://console.developers.google.com</span></span></a></li>
-<li><span><span>接受許可並創建Google API項目</span></span></li>
-<li><span><span>啟用Google +Domain API</span></span></li>
-<li><span><span>在Google + Domain API憑證下，按CONFIGURE CONSENT SCREEN按鈕</span></span></li>
-<li><span><span>選擇內部或外部用戶類型並添加新的應用程序名稱</span></span></li>
-<li><span><span>在“ API和服務”下，進入“憑證”頁面</span></span></li>
-<li><span><span _ngcontent-ith-c126="" class="cfc-table-title ng-star-inserted" id="cfc-table-caption-1" role="presentation"><span>為Web應用程序</span></span><span>創建“<span> </span></span></span><span _ngcontent-ith-c126="" class="cfc-table-title ng-star-inserted" id="cfc-table-caption-1" role="presentation"><span><span>OAuth 2.0客戶端ID”類型的憑據</span></span></span></li>
-<li><span><span>授權的JavaScript來源：</span></span><a href="https://localhost:8443/"><span><span>https://localhost:8443</span></span></a></li>
-<li><span><span>授權的重定向URI：</span></span><a href="https://localhost:8443/login/google/"><span><span>https://localhost:8443/login/google/</span></span></a></li>
-<li><span><span>將自己的的客戶ID和客戶密碼保存到oauth_gm.txt中</span></span></li>
-</ol>
-<p><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ijcS1EuAbjE" width="560"></iframe></span></span></p>
-<p><span><span>安裝Authomatic imutils opencv-python</span></span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install Authomatic imutils opencv-python</pre>
-<br />W16 << <a href='W16.html'>Previous</a> <a href='VirtualBox.html'>Next</a> >> VirtualBox</div>
+    <div id="tipue_search_content">指定網路位連線 << <a href='指定網路位連線.html'>Previous</a> <a href='虛擬主機 Q&A.html'>Next</a> >> 虛擬主機 Q&A<br /><h1>上傳檔案</h1>
+<p>為了上傳 ttt 檔到虛擬主機的pj1專案目錄下並遠端控制小車移動 </p>
+<p>在 static 的目錄下 uploadform.js 的資料格式增加 ttt 格式</p>
+<p><img caption="false" height="468" src="./../images/add_ttt_filetype.png" width="500"/></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">/*
+設定可以上傳的檔案副檔名
+呼叫執行 axuploader.js, 將檔案以批量直接存至伺服器硬碟
+嘗試同時將檔案透過 Google Drive API 存至對應的雲端硬碟
+用於將各上傳檔案名稱存入資料庫中, 檔案刪除時從資料庫中移除
+*/
+function sendToServer(files){
+    var req = new XMLHttpRequest();
+    var result = document.getElementById('result');
+    req.onreadystatechange = function()
+    {
+      if(this.readyState == 4 &amp;&amp; this.status == 200) {
+        result.innerHTML = this.responseText;
+      } else {
+        result.innerHTML = "working...";
+      }
+    }
+    
+    // 利用 POST 將上傳檔案名稱數列送至 server, 準備存入資料庫
+    req.open('POST', '/saveToDB', true);
+    req.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+    req.send("files=" +  files);
+}
+
+$(document).ready(function(){
+$('.prova').axuploader({url:'fileaxupload', allowExt:
+['jpg','png','gif','7z','pdf','zip','flv','stl','swf','ttt'],
+finish:function(x,files)
+    {
+        // 這裡要利用 sendToServer 函式將 files 數列傳到 server, 再由 python 納入資料庫
+        sendToServer(files);
+        alert('All files have been uploaded: '+files);
+
+    },
+enable:true,
+remotePath:function(){
+return 'downloads/';
+}
+});
+});</pre>
+<p></p><br />指定網路位連線 << <a href='指定網路位連線.html'>Previous</a> <a href='虛擬主機 Q&A.html'>Next</a> >> 虛擬主機 Q&A</div>
         
     <!-- footer -->
       <div class="container">

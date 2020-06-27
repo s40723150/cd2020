@@ -157,6 +157,21 @@
 <v t="leo.20200626161618.1"><vh>network setting IPv6 DHCP</vh>
 <v t="leo.20200626161618.2"><vh>setting IPv6</vh></v>
 </v>
+<v t="leo.20200627100031.1"><vh>connect setting IPv4</vh>
+<v t="leo.20200627100031.2"><vh>puttyIPv4</vh></v>
+</v>
+<v t="leo.20200627101607.1"><vh>connect setting IPv6</vh>
+<v t="leo.20200627101607.2"><vh>puttyIPv6</vh></v>
+</v>
+<v t="leo.20200627102004.1"><vh>connect setting X11</vh>
+<v t="leo.20200627102004.2"><vh>putty X11</vh></v>
+</v>
+<v t="leo.20200627102124.1"><vh>install xming</vh>
+<v t="leo.20200627102124.2"><vh>xming</vh></v>
+</v>
+<v t="leo.20200627103751.1"><vh>install File Manager</vh>
+<v t="leo.20200627103751.2"><vh>File Manager</vh></v>
+</v>
 <v t="leo.20200626142500.10"><vh>video</vh>
 <v t="leo.20200626142500.11"><vh>video</vh></v>
 </v>
@@ -951,7 +966,7 @@ pip install Authomatic imutils opencv-python
     &lt;/script&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20200626142500.11"> ## Youtube
-&lt;iframe width="1263" height="480" src="https://www.youtube.com/embed/ijcS1EuAbjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe width="1263" height="480" src="https://www.youtube.com/embed/ZoKaG6D-Rgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200626142500.2">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -1015,7 +1030,10 @@ sudo netplan apply
 cd /etc/apt/apt.conf.d
 sudo vi proxy.conf
 ```
-    </t>
+設定好後，更新proxy設定
+```
+sudo apt update
+```</t>
 <t tx="leo.20200626161439.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -1054,5 +1072,60 @@ proxy.conf 的內容
 ```
 Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";
 ```</t>
+<t tx="leo.20200627100031.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200627100031.2">## 連線設定
+
+Putty設定  IPv4
+
+&lt;img src="./../images/putty_IPv4.png" width="450"&gt;</t>
+<t tx="leo.20200627101607.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200627101607.2">## 連線設定
+
+Putty設定  IPv6
+
+&lt;img src="./../images/putty_IPv6.png" width="450"&gt;</t>
+<t tx="leo.20200627102004.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200627102004.2">## 連線設定
+
+Putty設定 X11(IPv4或IPv6設定都一樣)
+
+&lt;img src="./../images/putty_x11.png" width="450"&gt;</t>
+<t tx="leo.20200627102124.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200627102124.2">### 安裝[xming]
+
+&lt;img src="./../images/Xming.png" width="450"&gt;
+
+[xming]: https://sourceforge.net/projects/xming/files/latest/download</t>
+<t tx="leo.20200627103751.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200627103751.2">### File Manager
+安裝nautilus後執行，開啟File Manager
+
+    sudo apt install nautilus
+    sudo nautilus</t>
 </tnodes>
 </leo_file>

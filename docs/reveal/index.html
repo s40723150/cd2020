@@ -566,7 +566,10 @@ network:
 cd /etc/apt/apt.conf.d
 sudo vi proxy.conf
 ```
-    
+設定好後，更新proxy設定
+```
+sudo apt update
+```
     </script>
 </section>
 <section data-markdown>
@@ -585,8 +588,58 @@ Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
+## 連線設定
+
+Putty設定  IPv4
+
+<img src="./../images/putty_IPv4.png" width="450">
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 連線設定
+
+Putty設定  IPv6
+
+<img src="./../images/putty_IPv6.png" width="450">
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 連線設定
+
+Putty設定 X11(IPv4或IPv6設定都一樣)
+
+<img src="./../images/putty_x11.png" width="450">
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+### 安裝[xming]
+
+<img src="./../images/Xming.png" width="450">
+
+[xming]: https://sourceforge.net/projects/xming/files/latest/download
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+### File Manager
+安裝nautilus後執行，開啟File Manager
+
+    sudo apt install nautilus
+    sudo nautilus
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
  ## Youtube
-<iframe width="1263" height="480" src="https://www.youtube.com/embed/ijcS1EuAbjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1263" height="480" src="https://www.youtube.com/embed/ZoKaG6D-Rgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </script>
 </section>
 </section>
