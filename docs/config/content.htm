@@ -180,7 +180,8 @@ EXIT</pre>
 <p><span><span>W16：</span></span></p>
 <p><span><span>將ttt檔案格式成功上傳到虛擬主機上。</span></span></p>
 <p><span><span>W17：</span></span></p>
-<p><span><span>整理個人和分組的倉儲、簡報資料</span></span></p><h2>W2</h2>
+<p><span><span>整理個人和分組的倉儲、簡報資料</span></span></p>
+<p><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/EtfcX8KEpqE" width="560"></iframe></span></span></p><h2>W2</h2>
 <p>先創可攜系統的目錄 <span>”CD2020” </span>，在 <span>CD2020 </span>的目錄下新增 <span>”data”</span>。</p>
 <p>Python 3.8.2<br/>到 <span><a href="https://www.python.org/downloads/release/python-382/">https://www.python.org/downloads/release/python-382/</a> </span>搜尋<span>”Windows x86-64 executable installer”</span>並下載<span>”Windows x86-64 executable installer”</span>，下載完後，執行<span>python-3.8.2-amd64.exe</span></p>
 <p style="text-align: left;"><img alt="" height="244" src="/images/python_customize_install.png" width="400"/><br/><span>選Customize installation<br/><img alt="" height="246" src="/images/python_CI_pip_uncheck.png" width="400"/><br/>取消選取pip選項，Next<br/><img alt="" height="243" src="/images/python_CI_advamcedoption.png" width="400"/><br/>Install<br/>等它安裝完成<br/><img alt="" height="243" src="/images/python_setup_successful.png" width="400"/><br/>Close<br/></span><span>到剛剛安裝對應的目錄下去複製檔案<br/></span><img alt="" height="215" src="/images/python_files.png" width="400"/><br/>再先前創立的data目錄底下新增”py382”的目錄，再把複製到的檔案放到py382目錄裡</p>
@@ -437,7 +438,7 @@ sudo vi proxy.conf</pre>
 </li>
 </ol>
 <p>網路設定完成後可以啟動wsgi.py</p>
-<p>再用電腦上的網頁(不是虛擬主機的網頁)到 <a href="https://localhost:8443/看是否成功連上，如果成功連上後就換putty">https://localhost:8443/看是否成功連上，如果成功連上後就換putty</a></p>
+<p>再用電腦上的網頁(不是虛擬主機的網頁)到 <a href="https://localhost:8443/">https://localhost:8443/</a>看是否成功連上，如果成功連上後就換putty</p>
 <h4>Putty設定</h4>
 <p>IPv4</p>
 <p>Host Name：localhost<br/>Port：22<br/>Connection type：SSH</p>
@@ -464,8 +465,7 @@ sudo vi proxy.conf</pre>
 <p><span>到coppeliasim的目錄下開啟coppeliaSim.sh的檔案</span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">./coppeliaSim.sh</pre>
 <p>之後就會開啟CoppeilaSim了</p>
-<p><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZoKaG6D-Rgc" width="560"></iframe></p>
-<h2>指定網路位連線</h2>
+<p><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZoKaG6D-Rgc" width="560"></iframe></p><h2>指定網路位連線</h2>
 <p>每位同學都有被分配到一個指定的IPv6的網路位置，為了連上被分配到的網路位置，須經由以下設定才可連上</p>
 <p>由於是在學校的共用電腦所以先確認虛擬主機的網路設定，確認ifconfig查到的ID和設定的相同，IPv6的host ID是否是自己被分配到的ID</p>
 <p>確認無誤後，再執行wsgi.py，在虛擬主機測試，但在開啟時缺少pydrive，所以補裝上</p>
