@@ -1104,7 +1104,7 @@ Putty設定  IPv6
 
 Putty設定 X11(IPv4或IPv6設定都一樣)
 
-&lt;img src="./../images/putty_x11.png" width="450"&gt;</t>
+&lt;img src="./../images/putty_X11.png" width="450"&gt;</t>
 <t tx="leo.20200627102124.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
